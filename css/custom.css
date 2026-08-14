@@ -126,4 +126,4 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
 .avatar { width:2.5rem; height:2.5rem; border-radius:999px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; font-size:.85rem; }
 .testi-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:1.25rem; align-items:stretch; }
 @media (max-width:1024px) { .testi-grid { grid-template-columns:1fr 1fr; } .testi-featured { grid-column:span 2; } }
-@media (max-width:640px) { .testi-grid { grid-template-columns:1fr; } }
+@media (max-width:640px) { .testi-grid { grid-template-columns:1fr; } .testi-featured { grid-column:span 1; } }
