@@ -281,19 +281,19 @@
   <!-- ═══════════════════════════════════════════
        PRICING
   ═══════════════════════════════════════════ -->
-  <section id="harga" class="bg-cream py-24 px-6 lg:px-10">
+  <section id="harga" class="section-dark py-24 px-6 lg:px-10">
     <div class="max-w-7xl mx-auto">
       <p class="section-eye reveal">Paket Harga</p>
-      <h2 class="section-title reveal">Transparan, Tidak Ada Biaya Tersembunyi</h2>
+      <h2 class="section-title reveal">Transparan, Tanpa Biaya Tersembunyi</h2>
       <p class="section-sub reveal">Semua harga sudah termasuk revisi dan file final sesuai paket.</p>
 
       <!-- Tabs -->
-      <div class="flex flex-wrap gap-2 mt-10 mb-10 reveal" id="priceTabs">
-        <button onclick="switchTab('logo')"    data-tab="logo"    class="tab-btn tab-active">🏷️ Logo</button>
-        <button onclick="switchTab('cetak')"   data-tab="cetak"   class="tab-btn">🖨️ Desain Cetak</button>
-        <button onclick="switchTab('tracing')" data-tab="tracing" class="tab-btn">✏️ Tracing</button>
-        <button onclick="switchTab('canva')"   data-tab="canva"   class="tab-btn">🎨 Canva</button>
-        <button onclick="switchTab('mockup')"  data-tab="mockup"  class="tab-btn">📦 Mockup</button>
+      <div class="price-tabs mt-10 mb-10 reveal" id="priceTabs">
+        <button onclick="switchTab('logo')"    data-tab="logo"    class="tab-btn tab-active">Logo</button>
+        <button onclick="switchTab('cetak')"   data-tab="cetak"   class="tab-btn">Desain Cetak</button>
+        <button onclick="switchTab('tracing')" data-tab="tracing" class="tab-btn">Tracing</button>
+        <button onclick="switchTab('canva')"   data-tab="canva"   class="tab-btn">Canva</button>
+        <button onclick="switchTab('mockup')"  data-tab="mockup"  class="tab-btn">Mockup</button>
       </div>
 
       <!-- Pricing panels -->
@@ -301,7 +301,7 @@
 
         <!-- Logo -->
         <div id="panel-logo" class="price-panel grid sm:grid-cols-3 gap-6">
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">STARTER</p>
             <p class="price-amount">Rp75K</p>
             <p class="price-desc">Untuk bisnis baru yang butuh logo sederhana</p>
@@ -313,7 +313,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Desain Logo - Starter')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card price-card-featured">
+          <div class="price-card-dark price-featured-dark">
             <span class="price-popular">PALING POPULER</span>
             <p class="price-tier">PROFESIONAL</p>
             <p class="price-amount">Rp175K</p>
@@ -326,7 +326,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Desain Logo - Profesional')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">BRAND KIT</p>
             <p class="price-amount">Rp350K</p>
             <p class="price-desc">Paket identitas visual lengkap</p>
@@ -343,7 +343,7 @@
 
         <!-- Cetak -->
         <div id="panel-cetak" class="price-panel hidden grid sm:grid-cols-3 gap-6">
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">BASIC</p>
             <p class="price-amount">Rp50K</p>
             <p class="price-desc">1 item desain sederhana</p>
@@ -355,7 +355,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Desain Cetak - Basic')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card price-card-featured">
+          <div class="price-card-dark price-featured-dark">
             <span class="price-popular">PALING POPULER</span>
             <p class="price-tier">STANDARD</p>
             <p class="price-amount">Rp120K</p>
@@ -368,7 +368,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Desain Cetak - Standard')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">PAKET</p>
             <p class="price-amount">Rp250K</p>
             <p class="price-desc">Paket multi-item untuk campaign</p>
@@ -384,7 +384,7 @@
 
         <!-- Tracing -->
         <div id="panel-tracing" class="price-panel hidden grid sm:grid-cols-3 gap-6">
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">SIMPLE</p>
             <p class="price-amount">Rp35K</p>
             <p class="price-desc">Objek sederhana, path minimal</p>
@@ -395,7 +395,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Manual Tracing - Simple')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card price-card-featured">
+          <div class="price-card-dark price-featured-dark">
             <span class="price-popular">PALING POPULER</span>
             <p class="price-tier">DETAIL</p>
             <p class="price-amount">Rp85K</p>
@@ -408,7 +408,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Manual Tracing - Detail')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">PREMIUM</p>
             <p class="price-amount">Rp175K</p>
             <p class="price-desc">Ilustrasi kompleks, multi-warna</p>
@@ -424,7 +424,7 @@
 
         <!-- Canva -->
         <div id="panel-canva" class="price-panel hidden grid sm:grid-cols-3 gap-6">
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">MINI</p>
             <p class="price-amount">Rp45K</p>
             <p class="price-desc">1 set template Canva</p>
@@ -435,7 +435,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Template Canva - Mini')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card price-card-featured">
+          <div class="price-card-dark price-featured-dark">
             <span class="price-popular">PALING POPULER</span>
             <p class="price-tier">BRAND</p>
             <p class="price-amount">Rp120K</p>
@@ -448,7 +448,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Template Canva - Brand')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">FULL KIT</p>
             <p class="price-amount">Rp250K</p>
             <p class="price-desc">Semua kebutuhan konten dalam 1 paket</p>
@@ -464,7 +464,7 @@
 
         <!-- Mockup -->
         <div id="panel-mockup" class="price-panel hidden grid sm:grid-cols-3 gap-6">
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">SINGLE</p>
             <p class="price-amount">Rp25K</p>
             <p class="price-desc">1 mockup produk/item</p>
@@ -475,7 +475,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Jasa Mockup - Single')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card price-card-featured">
+          <div class="price-card-dark price-featured-dark">
             <span class="price-popular">PALING POPULER</span>
             <p class="price-tier">PAKET 3</p>
             <p class="price-amount">Rp65K</p>
@@ -488,7 +488,7 @@
             </ul>
             <a href="#" onclick="openModal(event,'Jasa Mockup - Paket 3')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
           </div>
-          <div class="price-card">
+          <div class="price-card-dark">
             <p class="price-tier">PAKET 6</p>
             <p class="price-amount">Rp120K</p>
             <p class="price-desc">Paket lengkap untuk toko online</p>

@@ -78,3 +78,31 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
   .svc-card.wide { grid-column:span 1; flex-direction:column; align-items:flex-start; }
   .svc-cta { grid-column:span 1; }
 }
+/* harga dark */
+.price-tabs { display:flex; flex-wrap:wrap; gap:.5rem; }
+.price-tabs .tab-btn {
+  padding:.65rem 1.25rem; border-radius:999px; font-size:.875rem; font-weight:600;
+  border:1px solid var(--night-line); background:transparent; color:rgba(255,255,255,.65);
+  transition:all .2s; cursor:pointer;
+}
+.price-tabs .tab-btn:hover { border-color:var(--brand-400); color:var(--brand-400); }
+.price-tabs .tab-active { background:var(--brand-600); border-color:var(--brand-600); color:#fff; }
+.price-card-dark {
+  background:var(--night-card); border:1px solid var(--night-line); border-radius:var(--radius);
+  padding:1.75rem; position:relative; transition:border-color .2s;
+}
+.price-card-dark:hover { border-color:rgba(255,255,255,.25); }
+.price-card-dark.price-featured-dark { border-color:var(--brand-500); }
+.price-popular {
+  position:absolute; top:-.8rem; left:50%; transform:translateX(-50%);
+  background:var(--brand-600); color:#fff; font-size:.6rem; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase; border-radius:999px; padding:.3rem .9rem; white-space:nowrap;
+}
+.price-tier { font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.5); margin-bottom:.5rem; }
+.price-amount { font-family:var(--font-display); font-weight:700; font-size:2.25rem; color:#fff; margin-bottom:.5rem; }
+.price-desc { color:rgba(255,255,255,.6); font-size:.875rem; margin-bottom:1.25rem; }
+.price-features { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
+.price-features li { font-size:.875rem; color:rgba(255,255,255,.75); display:flex; align-items:flex-start; gap:.5rem; }
+.price-features li::before { content:'✓'; color:var(--brand-400); font-weight:700; }
+.price-card-dark .btn-outline { border-color:var(--night-line); color:#fff; }
+.price-card-dark .btn-outline:hover { border-color:var(--brand-400); color:var(--brand-400); }
