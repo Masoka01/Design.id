@@ -1,194 +1,39 @@
-/* =============================================
-   DesainKu Studio — Custom CSS
-   (Supplements Tailwind for reusable components)
-============================================= */
-
-/* ── Buttons ─────────────────────────────── */
-.btn-primary {
-  @apply inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700
-         text-white font-semibold rounded-full px-7 py-3.5
-         transition-all duration-200 hover:-translate-y-0.5;
+:root {
+  --ink: #111118; --muted: #6B6860; --paper: #F7F6F2; --cream: #EDEAE1;
+  --brand-50:#FFF5F0; --brand-100:#FFE8D9; --brand-200:#FFCAAA; --brand-300:#FFA070;
+  --brand-400:#FF7540; --brand-500:#E8602A; --brand-600:#C85020; --brand-700:#A84018;
+  --brand-800:#7A2F10; --brand-900:#4A1C08;
+  --night:#1F1D18; --night-card:#2B2823; --night-line:#3A362F;
+  --font-display:'Space Grotesk', sans-serif; --font-body:'Inter', sans-serif;
+  --radius: 1.25rem;
 }
-
-.btn-outline {
-  @apply inline-flex items-center gap-2 border-2 border-ink/20 hover:border-brand-600
-         text-ink hover:text-brand-600 font-semibold rounded-full px-7 py-3.5
-         transition-all duration-200;
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.font-display { font-family: var(--font-display); }
+.btn-primary,.btn-outline,.btn-wa,.btn-light {
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  font-weight:600; border-radius:999px; padding:.9rem 1.75rem;
+  transition: all .2s ease; cursor:pointer; font-size:.95rem; line-height:1.2;
 }
-
-.btn-wa {
-  @apply inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1db954]
-         text-white font-bold rounded-full px-7 py-3.5
-         transition-all duration-200 hover:-translate-y-0.5;
-}
-
-/* ── Section typography ───────────────────── */
-.section-eye {
-  @apply text-xs font-bold tracking-[.14em] uppercase text-brand-600 mb-3 block;
-}
-
-.section-title {
-  @apply font-display font-extrabold text-4xl lg:text-5xl leading-tight mb-4;
-}
-
-.section-sub {
-  @apply text-muted text-lg max-w-xl mb-0 leading-relaxed;
-}
-
-/* ── Navbar scroll state ──────────────────── */
-#navbar {
-  @apply bg-paper/80 backdrop-blur-md border-b border-transparent;
-  transition: border-color .3s, box-shadow .3s;
-}
-#navbar.scrolled {
-  @apply border-cream shadow-sm;
-}
-
-/* ── Hero float cards ─────────────────────── */
-.service-float-card {
-  @apply bg-white rounded-2xl p-6 border border-cream
-         flex flex-col items-start
-         shadow-sm hover:shadow-md hover:-translate-y-1
-         transition-all duration-300;
-}
-
-.badge-chip {
-  @apply inline-block bg-cream text-muted text-xs rounded-full px-3 py-1;
-}
-
-/* ── Why cards ────────────────────────────── */
-.why-card {
-  @apply bg-white rounded-2xl p-7 border border-cream/80
-         hover:shadow-lg hover:-translate-y-1
-         transition-all duration-300;
-}
-
-/* ── Service cards ────────────────────────── */
-.service-card {
-  @apply bg-white rounded-2xl border border-cream overflow-hidden
-         hover:shadow-xl hover:-translate-y-1.5
-         transition-all duration-300;
-}
-
-.badge {
-  @apply inline-block text-xs font-bold tracking-wider uppercase rounded-md px-2.5 py-1;
-}
-
-.feature-list {
-  @apply flex flex-col gap-2.5;
-}
-.feature-list li {
-  @apply text-sm flex items-start gap-2.5 text-ink/80;
-}
-.feature-list li::before {
-  content: '✓';
-  @apply text-brand-600 font-bold shrink-0 mt-px;
-}
-
-/* ── Pricing ──────────────────────────────── */
-.tab-btn {
-  @apply px-5 py-2.5 rounded-full text-sm font-semibold border-2 border-cream
-         bg-white text-muted hover:border-brand-400 hover:text-brand-600
-         transition-all duration-200 cursor-pointer;
-}
-.tab-active {
-  @apply border-brand-600 text-brand-600 bg-brand-50;
-}
-
-.price-panel {
-  @apply grid;
-}
-
-.price-card {
-  @apply bg-white rounded-2xl border-2 border-cream p-7 relative
-         hover:border-brand-300 transition-all duration-200;
-}
-.price-card-featured {
-  @apply border-brand-600 shadow-lg shadow-brand-100;
-}
-
-.price-popular {
-  @apply absolute -top-3.5 left-1/2 -translate-x-1/2
-         bg-brand-600 text-white text-[10px] font-bold tracking-wider
-         uppercase rounded-full px-4 py-1 whitespace-nowrap;
-}
-
-.price-tier {
-  @apply text-xs font-bold tracking-[.12em] uppercase text-muted mb-2;
-}
-.price-amount {
-  @apply font-display font-extrabold text-4xl text-ink mb-2;
-}
-.price-desc {
-  @apply text-sm text-muted mb-5 leading-relaxed;
-}
-.price-features {
-  @apply flex flex-col gap-2;
-}
-.price-features li {
-  @apply text-sm flex items-start gap-2 text-ink/80;
-}
-.price-features li::before {
-  content: '✓';
-  @apply text-brand-600 font-bold shrink-0;
-}
-
-/* ── Process steps ────────────────────────── */
-.step-card {
-  @apply bg-white rounded-2xl border border-cream p-6 relative overflow-hidden
-         hover:shadow-md transition-all duration-300;
-}
-.step-num {
-  @apply absolute right-4 top-3 font-display font-extrabold text-5xl text-cream leading-none select-none;
-}
-
-/* ── Testimonials ─────────────────────────── */
-.testi-card {
-  @apply bg-white rounded-2xl border border-cream p-7;
-}
-.avatar {
-  @apply w-10 h-10 rounded-full flex items-center justify-center
-         font-bold text-white text-sm shrink-0;
-}
-
-/* ── FAQ ──────────────────────────────────── */
-.faq-item {
-  @apply bg-white border border-cream rounded-2xl overflow-hidden;
-}
-.faq-q {
-  @apply w-full flex items-center justify-between gap-4 text-left
-         font-semibold text-sm px-6 py-5 hover:text-brand-600
-         transition-colors cursor-pointer;
-}
-.faq-a {
-  @apply hidden text-sm text-muted leading-relaxed px-6 pb-5;
-}
-.faq-item.open .faq-a {
-  display: block;
-}
-.faq-item.open .faq-arrow {
-  transform: rotate(180deg);
-}
-
-/* ── Input fields ─────────────────────────── */
-.input-field {
-  @apply w-full border-2 border-cream rounded-xl px-4 py-3 text-sm
-         font-body text-ink bg-white outline-none
-         focus:border-brand-500 transition-colors;
-}
-
-/* ── Reveal animation ─────────────────────── */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .55s ease, transform .55s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* ── Modal ────────────────────────────────── */
-#orderModal.open {
-  display: flex;
-}
+.btn-primary { background: var(--brand-600); color:#fff; }
+.btn-primary:hover { background: var(--brand-700); transform: translateY(-2px); }
+.btn-outline { border:2px solid rgba(17,17,24,.2); color:var(--ink); background:transparent; }
+.btn-outline:hover { border-color: var(--brand-600); color: var(--brand-600); }
+.btn-wa { background:#25D366; color:#fff; font-weight:700; }
+.btn-wa:hover { background:#1db954; transform: translateY(-2px); }
+.btn-light { background:#fff; color:var(--ink); }
+.btn-light:hover { background:var(--cream); transform: translateY(-2px); }
+.btn-ghost-dark { border:1px solid rgba(255,255,255,.25); color:#fff; background:transparent; }
+.btn-ghost-dark:hover { border-color:#fff; background:rgba(255,255,255,.08); }
+.section-eye { display:block; font-size:.75rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--brand-600); margin-bottom:.75rem; }
+.section-title { font-family:var(--font-display); font-weight:700; font-size:clamp(1.9rem, 4vw, 3rem); line-height:1.15; margin-bottom:1rem; }
+.section-sub { color:var(--muted); font-size:1.05rem; max-width:38rem; line-height:1.65; }
+.section-dark .section-title { color:#fff; }
+.section-dark .section-sub { color:rgba(255,255,255,.6); }
+.reveal { opacity:0; transform:translateY(24px); transition:opacity .55s ease, transform .55s ease; }
+.reveal.visible { opacity:1; transform:none; }
+.card-light { background:#fff; border:1px solid var(--cream); border-radius:var(--radius); }
+.section-dark { background:var(--night); color:#fff; }
+.section-dark .card-light, .section-dark .card { background:var(--night-card); border-color:var(--night-line); }
+/* ikon svg */
+.icon { width:1.25rem; height:1.25rem; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
