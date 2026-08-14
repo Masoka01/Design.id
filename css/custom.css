@@ -1,3 +1,6 @@
+/* navbar scrolled state */
+#navbar { background: transparent; }
+#navbar.scrolled { background: rgba(247,246,242,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:0 1px 0 var(--cream); }
 :root {
   --ink: #111118; --muted: #6B6860; --paper: #F7F6F2; --cream: #EDEAE1;
   --brand-50:#FFF5F0; --brand-100:#FFE8D9; --brand-200:#FFCAAA; --brand-300:#FFA070;
