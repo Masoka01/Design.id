@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DesainKu Studio – Logo, Cetak, Tracing, Canva & Mockup</title>
+  <meta name="description" content="Jasa desain grafis profesional: Logo, Desain Cetak, Manual Tracing, Template Canva, dan Mockup. Harga terjangkau, kualitas premium, file siap pakai." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body:    ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#FFF5F0',
+              100: '#FFE8D9',
+              200: '#FFCAAA',
+              300: '#FFA070',
+              400: '#FF7540',
+              500: '#E8602A',
+              600: '#C85020',
+              700: '#A84018',
+              800: '#7A2F10',
+              900: '#4A1C08',
+            },
+            ink:   '#111118',
+            paper: '#F7F6F2',
+            cream: '#EDEAE1',
+            muted: '#6B6860',
+          },
+          animation: {
+            'fade-up':    'fadeUp .6s ease both',
+            'fade-in':    'fadeIn .5s ease both',
+            'pulse-dot':  'pulseDot 2s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeUp:   { '0%':{ opacity:0, transform:'translateY(28px)' }, '100%':{ opacity:1, transform:'none' } },
+            fadeIn:   { '0%':{ opacity:0 }, '100%':{ opacity:1 } },
+            pulseDot: { '0%,100%':{ transform:'scale(1)', opacity:1 }, '50%':{ transform:'scale(1.4)', opacity:.6 } },
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="font-body bg-paper text-ink antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <nav class="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between gap-6">
+
+      <!-- Logo -->
+      <a href="#home" class="font-display font-extrabold text-xl text-ink shrink-0">
+        Desain<span class="text-brand-600">Ku</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+        <li><a href="#layanan"   class="hover:text-brand-600 transition-colors">Layanan</a></li>
+        <li><a href="#harga"     class="hover:text-brand-600 transition-colors">Harga</a></li>
+        <li><a href="#proses"    class="hover:text-brand-600 transition-colors">Proses</a></li>
+        <li><a href="#testimoni" class="hover:text-brand-600 transition-colors">Testimoni</a></li>
+        <li><a href="#faq"       class="hover:text-brand-600 transition-colors">FAQ</a></li>
+      </ul>
+
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="#kontak" class="hidden sm:inline-flex btn-primary text-sm px-5 py-2.5">
+          Konsultasi Gratis
+        </a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-cream transition-colors" aria-label="Menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-cream px-6 pb-5 pt-3 flex flex-col gap-4 text-sm font-medium">
+      <a href="#layanan"   class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Layanan</a>
+      <a href="#harga"     class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Harga</a>
+      <a href="#proses"    class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Proses</a>
+      <a href="#testimoni" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Testimoni</a>
+      <a href="#faq"       class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">FAQ</a>
+      <a href="#kontak"    class="btn-primary text-center mt-1" onclick="closeMobileMenu()">Konsultasi Gratis</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="min-h-screen flex flex-col justify-center pt-24 pb-16 px-6 lg:px-10 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left -->
+      <div class="reveal">
+        <!-- Tag -->
+        <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-full px-4 py-1.5 text-xs font-bold text-brand-600 mb-6">
+          <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse-dot"></span>
+          Studio Desain Grafis Profesional
+        </div>
+
+        <h1 class="font-display font-extrabold text-5xl lg:text-6xl xl:text-7xl leading-[1.06] mb-6">
+          Desain yang<br/>
+          <span class="text-brand-600">Bicara</span> untuk<br/>
+          Bisnis Anda
+        </h1>
+
+        <p class="text-muted text-lg max-w-md mb-8 leading-relaxed">
+          Logo berkarakter, desain cetak siap produksi, manual tracing presisi,
+          template Canva siap pakai, hingga mockup produk yang memukau.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mb-12">
+          <a href="#layanan" class="btn-primary">
+            <span>🎨</span> Lihat Layanan
+          </a>
+          <a href="#kontak" class="btn-outline">
+            Konsultasi Gratis
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-cream/80">
+          <div>
+            <p class="font-display font-extrabold text-3xl text-ink">800<span class="text-brand-600">+</span></p>
+            <p class="text-xs text-muted mt-1">Proyek Selesai</p>
+          </div>
+          <div>
+            <p class="font-display font-extrabold text-3xl text-ink">350<span class="text-brand-600">+</span></p>
+            <p class="text-xs text-muted mt-1">Klien Puas</p>
+          </div>
+          <div>
+            <p class="font-display font-extrabold text-3xl text-ink">5<span class="text-brand-600">★</span></p>
+            <p class="text-xs text-muted mt-1">Rating Rata-rata</p>
+          </div>
+          <div>
+            <p class="font-display font-extrabold text-3xl text-ink">&lt;3<span class="text-brand-600">hr</span></p>
+            <p class="text-xs text-muted mt-1">Waktu Respons</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – floating service cards -->
+      <div class="hidden lg:grid grid-cols-2 gap-4 reveal" style="animation-delay:.15s">
+        <div class="service-float-card mt-8">
+          <span class="text-3xl">🏷️</span>
+          <p class="font-display font-bold text-sm mt-3">Desain Logo</p>
+          <span class="badge-chip mt-2">Unik & Berkarakter</span>
+        </div>
+        <div class="service-float-card">
+          <span class="text-3xl">🖨️</span>
+          <p class="font-display font-bold text-sm mt-3">Desain Cetak</p>
+          <span class="badge-chip mt-2">CMYK Siap Cetak</span>
+        </div>
+        <div class="service-float-card">
+          <span class="text-3xl">✏️</span>
+          <p class="font-display font-bold text-sm mt-3">Manual Tracing</p>
+          <span class="badge-chip mt-2">Vector Presisi</span>
+        </div>
+        <div class="service-float-card -mt-4">
+          <span class="text-3xl">🎨</span>
+          <p class="font-display font-bold text-sm mt-3">Template Canva</p>
+          <span class="badge-chip mt-2">Siap Edit</span>
+        </div>
+        <div class="service-float-card col-span-2">
+          <span class="text-3xl">📦</span>
+          <p class="font-display font-bold text-sm mt-3">Jasa Mockup</p>
+          <span class="badge-chip mt-2">Presentasi Profesional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHY US
+  ═══════════════════════════════════════════ -->
+  <section class="bg-cream py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Mengapa Kami</p>
+      <h2 class="section-title reveal">Kenapa Pilih DesainKu?</h2>
+      <p class="section-sub reveal">Kami tidak sekadar bikin desain — kami bantu bisnis Anda tampil beda dan diingat.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="why-card reveal">
+          <div class="text-3xl mb-4">⚡</div>
+          <h4 class="font-display font-bold mb-2">Pengerjaan Cepat</h4>
+          <p class="text-sm text-muted leading-relaxed">Respons dalam hitungan jam, pengerjaan tepat sesuai deadline.</p>
+        </div>
+        <div class="why-card reveal" style="animation-delay:.1s">
+          <div class="text-3xl mb-4">🎯</div>
+          <h4 class="font-display font-bold mb-2">Konsep Orisinal</h4>
+          <p class="text-sm text-muted leading-relaxed">Setiap desain dibuat fresh dari nol, bukan template asal jadi.</p>
+        </div>
+        <div class="why-card reveal" style="animation-delay:.2s">
+          <div class="text-3xl mb-4">🔄</div>
+          <h4 class="font-display font-bold mb-2">Revisi Fleksibel</h4>
+          <p class="text-sm text-muted leading-relaxed">Revisi hingga kamu puas. Kami tidak melempar kerja lalu pergi.</p>
+        </div>
+        <div class="why-card reveal" style="animation-delay:.3s">
+          <div class="text-3xl mb-4">📁</div>
+          <h4 class="font-display font-bold mb-2">File Lengkap</h4>
+          <p class="text-sm text-muted leading-relaxed">Terima AI, CDR, PNG, PDF, SVG — semua format yang kamu butuhkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section id="layanan" class="py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Layanan Kami</p>
+      <h2 class="section-title reveal">5 Layanan Unggulan</h2>
+      <p class="section-sub reveal">Dari identitas brand hingga presentasi produk — semua ada di sini.</p>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7 mt-12">
+
+        <!-- 1. Logo -->
+        <div class="service-card reveal group">
+          <div class="p-7 border-b border-cream">
+            <span class="badge bg-brand-600 text-white">🏷️ LOGO DESIGN</span>
+            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Desain Logo</h3>
+            <p class="text-sm text-muted mb-4">Identitas visual yang kuat dan tak terlupakan untuk brand Anda.</p>
+            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp75K</span></p>
+          </div>
+          <div class="p-7">
+            <ul class="feature-list">
+              <li>Konsep logo orisinal & unik</li>
+              <li>File vector AI/CDR + PNG/JPG</li>
+              <li>Versi warna & hitam-putih</li>
+              <li>Cocok untuk semua media cetak & digital</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Logo')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <!-- 2. Desain Cetak -->
+        <div class="service-card reveal group" style="animation-delay:.08s">
+          <div class="p-7 border-b border-cream">
+            <span class="badge bg-blue-600 text-white">🖨️ DESAIN CETAK</span>
+            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Desain Cetak</h3>
+            <p class="text-sm text-muted mb-4">Banner, brosur, flyer, poster — siap produksi, CMYK, resolusi tinggi.</p>
+            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp50K</span></p>
+          </div>
+          <div class="p-7">
+            <ul class="feature-list">
+              <li>Banner, spanduk, X-Banner</li>
+              <li>Brosur, flyer, poster, leaflet</li>
+              <li>Kartu nama, stiker</li>
+              <li>File CMYK siap ke percetakan</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Cetak')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <!-- 3. Manual Tracing -->
+        <div class="service-card reveal group" style="animation-delay:.16s">
+          <div class="p-7 border-b border-cream">
+            <span class="badge bg-green-700 text-white">✏️ MANUAL TRACING</span>
+            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Manual Tracing</h3>
+            <p class="text-sm text-muted mb-4">Ubah gambar/foto menjadi vector bersih dan presisi dengan tangan.</p>
+            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp35K</span></p>
+          </div>
+          <div class="p-7">
+            <ul class="feature-list">
+              <li>Trace logo, tanda tangan, ilustrasi</li>
+              <li>Hasil vector AI/CDR/SVG bersih</li>
+              <li>Cocok untuk bordir, cutting, sablon</li>
+              <li>Presisi tinggi, path rapi</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Manual Tracing')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <!-- 4. Template Canva -->
+        <div class="service-card reveal group" style="animation-delay:.24s">
+          <div class="p-7 border-b border-cream">
+            <span class="badge bg-purple-700 text-white">🎨 TEMPLATE CANVA</span>
+            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Template Canva</h3>
+            <p class="text-sm text-muted mb-4">Template Canva custom sesuai brand — tinggal edit, langsung pakai.</p>
+            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp45K</span></p>
+          </div>
+          <div class="p-7">
+            <ul class="feature-list">
+              <li>Feed Instagram, story, highlight</li>
+              <li>Presentasi, pitch deck Canva</li>
+              <li>Template menu, price list, katalog</li>
+              <li>Dikirim via link Canva langsung</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Template Canva')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <!-- 5. Jasa Mockup -->
+        <div class="service-card reveal group" style="animation-delay:.32s">
+          <div class="p-7 border-b border-cream">
+            <span class="badge bg-amber-700 text-white">📦 JASA MOCKUP</span>
+            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Jasa Mockup</h3>
+            <p class="text-sm text-muted mb-4">Tampilkan produk/desain Anda secara realistis & profesional.</p>
+            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp25K</span></p>
+          </div>
+          <div class="p-7">
+            <ul class="feature-list">
+              <li>Mockup kemasan, kaos, tote bag</li>
+              <li>Mockup label botol, stiker produk</li>
+              <li>Mockup billboard, neon sign</li>
+              <li>File PNG/JPG resolusi tinggi</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Jasa Mockup')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="reveal flex flex-col items-center justify-center bg-ink rounded-2xl p-8 text-center min-h-[300px]" style="animation-delay:.4s">
+          <p class="text-4xl mb-4">💬</p>
+          <h3 class="font-display font-bold text-white text-xl mb-3">Butuh layanan custom?</h3>
+          <p class="text-white/60 text-sm mb-6">Tidak ketemu layanan yang pas? Ceritakan kebutuhanmu, kami bisa bantu!</p>
+          <a href="#kontak" class="btn-wa inline-flex">Chat WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRICING
+  ═══════════════════════════════════════════ -->
+  <section id="harga" class="bg-cream py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Paket Harga</p>
+      <h2 class="section-title reveal">Transparan, Tidak Ada Biaya Tersembunyi</h2>
+      <p class="section-sub reveal">Semua harga sudah termasuk revisi dan file final sesuai paket.</p>
+
+      <!-- Tabs -->
+      <div class="flex flex-wrap gap-2 mt-10 mb-10 reveal" id="priceTabs">
+        <button onclick="switchTab('logo')"    data-tab="logo"    class="tab-btn tab-active">🏷️ Logo</button>
+        <button onclick="switchTab('cetak')"   data-tab="cetak"   class="tab-btn">🖨️ Desain Cetak</button>
+        <button onclick="switchTab('tracing')" data-tab="tracing" class="tab-btn">✏️ Tracing</button>
+        <button onclick="switchTab('canva')"   data-tab="canva"   class="tab-btn">🎨 Canva</button>
+        <button onclick="switchTab('mockup')"  data-tab="mockup"  class="tab-btn">📦 Mockup</button>
+      </div>
+
+      <!-- Pricing panels -->
+      <div id="pricePanels">
+
+        <!-- Logo -->
+        <div id="panel-logo" class="price-panel grid sm:grid-cols-3 gap-6">
+          <div class="price-card">
+            <p class="price-tier">STARTER</p>
+            <p class="price-amount">Rp75K</p>
+            <p class="price-desc">Untuk bisnis baru yang butuh logo sederhana</p>
+            <ul class="price-features">
+              <li>2 konsep logo</li>
+              <li>Revisi 2x</li>
+              <li>File JPG & PNG</li>
+              <li>Warna & hitam-putih</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Logo - Starter')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card-featured">
+            <span class="price-popular">PALING POPULER</span>
+            <p class="price-tier">PROFESIONAL</p>
+            <p class="price-amount">Rp175K</p>
+            <p class="price-desc">Untuk brand yang ingin tampil percaya diri</p>
+            <ul class="price-features">
+              <li>3 konsep logo</li>
+              <li>Revisi 4x</li>
+              <li>File JPG, PNG & Source AI/CDR</li>
+              <li>Panduan warna & font</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Logo - Profesional')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <p class="price-tier">BRAND KIT</p>
+            <p class="price-amount">Rp350K</p>
+            <p class="price-desc">Paket identitas visual lengkap</p>
+            <ul class="price-features">
+              <li>3 konsep logo premium</li>
+              <li>Revisi fleksibel</li>
+              <li>File lengkap + Source</li>
+              <li>Kartu nama & kop surat</li>
+              <li>Brand guideline mini</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Logo - Brand Kit')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+        </div>
+
+        <!-- Cetak -->
+        <div id="panel-cetak" class="price-panel hidden grid sm:grid-cols-3 gap-6">
+          <div class="price-card">
+            <p class="price-tier">BASIC</p>
+            <p class="price-amount">Rp50K</p>
+            <p class="price-desc">1 item desain sederhana</p>
+            <ul class="price-features">
+              <li>1 desain</li>
+              <li>Revisi 2x</li>
+              <li>File JPG & PDF</li>
+              <li>Siap cetak</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Cetak - Basic')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card-featured">
+            <span class="price-popular">PALING POPULER</span>
+            <p class="price-tier">STANDARD</p>
+            <p class="price-amount">Rp120K</p>
+            <p class="price-desc">Desain detail dengan 2 konsep</p>
+            <ul class="price-features">
+              <li>1 desain detail</li>
+              <li>2 konsep</li>
+              <li>Revisi 3x</li>
+              <li>File JPG, PNG & PDF CMYK</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Cetak - Standard')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <p class="price-tier">PAKET</p>
+            <p class="price-amount">Rp250K</p>
+            <p class="price-desc">Paket multi-item untuk campaign</p>
+            <ul class="price-features">
+              <li>Hingga 5 item desain</li>
+              <li>Revisi 5x</li>
+              <li>File lengkap semua format</li>
+              <li>Konsultasi desain gratis</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Desain Cetak - Paket')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+        </div>
+
+        <!-- Tracing -->
+        <div id="panel-tracing" class="price-panel hidden grid sm:grid-cols-3 gap-6">
+          <div class="price-card">
+            <p class="price-tier">SIMPLE</p>
+            <p class="price-amount">Rp35K</p>
+            <p class="price-desc">Objek sederhana, path minimal</p>
+            <ul class="price-features">
+              <li>1 objek sederhana</li>
+              <li>Revisi 2x</li>
+              <li>File AI/CDR/SVG</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Manual Tracing - Simple')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card-featured">
+            <span class="price-popular">PALING POPULER</span>
+            <p class="price-tier">DETAIL</p>
+            <p class="price-amount">Rp85K</p>
+            <p class="price-desc">Logo, tanda tangan, ilustrasi detail</p>
+            <ul class="price-features">
+              <li>1 objek detail/kompleks</li>
+              <li>Revisi 3x</li>
+              <li>File AI/CDR/SVG bersih</li>
+              <li>Path rapi & presisi</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Manual Tracing - Detail')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <p class="price-tier">PREMIUM</p>
+            <p class="price-amount">Rp175K</p>
+            <p class="price-desc">Ilustrasi kompleks, multi-warna</p>
+            <ul class="price-features">
+              <li>Ilustrasi kompleks</li>
+              <li>Revisi 5x</li>
+              <li>File lengkap + layered</li>
+              <li>Cocok untuk sablon, bordir</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Manual Tracing - Premium')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+        </div>
+
+        <!-- Canva -->
+        <div id="panel-canva" class="price-panel hidden grid sm:grid-cols-3 gap-6">
+          <div class="price-card">
+            <p class="price-tier">MINI</p>
+            <p class="price-amount">Rp45K</p>
+            <p class="price-desc">1 set template Canva</p>
+            <ul class="price-features">
+              <li>3–5 template</li>
+              <li>1 tema desain</li>
+              <li>Link Canva dikirim langsung</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Template Canva - Mini')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card-featured">
+            <span class="price-popular">PALING POPULER</span>
+            <p class="price-tier">BRAND</p>
+            <p class="price-amount">Rp120K</p>
+            <p class="price-desc">Template lengkap sesuai brand</p>
+            <ul class="price-features">
+              <li>10–15 template</li>
+              <li>Custom warna & font brand</li>
+              <li>Feed + story + highlight</li>
+              <li>Link Canva editable</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Template Canva - Brand')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <p class="price-tier">FULL KIT</p>
+            <p class="price-amount">Rp250K</p>
+            <p class="price-desc">Semua kebutuhan konten dalam 1 paket</p>
+            <ul class="price-features">
+              <li>25–30 template</li>
+              <li>Presentasi + feed + story</li>
+              <li>Menu, price list, katalog</li>
+              <li>Panduan penggunaan</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Template Canva - Full Kit')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+        </div>
+
+        <!-- Mockup -->
+        <div id="panel-mockup" class="price-panel hidden grid sm:grid-cols-3 gap-6">
+          <div class="price-card">
+            <p class="price-tier">SINGLE</p>
+            <p class="price-amount">Rp25K</p>
+            <p class="price-desc">1 mockup produk/item</p>
+            <ul class="price-features">
+              <li>1 item mockup</li>
+              <li>1 sudut pandang</li>
+              <li>File PNG/JPG HD</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Jasa Mockup - Single')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card price-card-featured">
+            <span class="price-popular">PALING POPULER</span>
+            <p class="price-tier">PAKET 3</p>
+            <p class="price-amount">Rp65K</p>
+            <p class="price-desc">3 mockup berbeda sudut pandang</p>
+            <ul class="price-features">
+              <li>3 mockup berbeda angle</li>
+              <li>Revisi 2x</li>
+              <li>File PNG/JPG HD</li>
+              <li>Latar putih & lifestyle</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Jasa Mockup - Paket 3')" class="btn-primary w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <p class="price-tier">PAKET 6</p>
+            <p class="price-amount">Rp120K</p>
+            <p class="price-desc">Paket lengkap untuk toko online</p>
+            <ul class="price-features">
+              <li>6 mockup berbeda</li>
+              <li>Revisi 3x</li>
+              <li>Berbagai jenis item</li>
+              <li>File PNG/JPG HD + ZIP</li>
+            </ul>
+            <a href="#" onclick="openModal(event,'Jasa Mockup - Paket 6')" class="btn-outline w-full text-center block mt-6">Pilih Paket</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROCESS
+  ═══════════════════════════════════════════ -->
+  <section id="proses" class="py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Alur Kerja</p>
+      <h2 class="section-title reveal">Mudah & Transparan</h2>
+      <p class="section-sub reveal">Dari konsultasi hingga file final — kamu tahu posisi proyekmu di mana.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
+        <div class="step-card reveal">
+          <div class="step-num">01</div>
+          <div class="text-2xl mb-3">💬</div>
+          <h4 class="font-display font-bold mb-2">Konsultasi</h4>
+          <p class="text-sm text-muted">Ceritakan kebutuhan & referensi desain via WhatsApp.</p>
+        </div>
+        <div class="step-card reveal" style="animation-delay:.08s">
+          <div class="step-num">02</div>
+          <div class="text-2xl mb-3">📋</div>
+          <h4 class="font-display font-bold mb-2">Brief & Penawaran</h4>
+          <p class="text-sm text-muted">Kami kirim estimasi harga dan timeline pengerjaan.</p>
+        </div>
+        <div class="step-card reveal" style="animation-delay:.16s">
+          <div class="step-num">03</div>
+          <div class="text-2xl mb-3">🖥️</div>
+          <h4 class="font-display font-bold mb-2">Proses Desain</h4>
+          <p class="text-sm text-muted">Tim kami mulai mengerjakan desain sesuai brief.</p>
+        </div>
+        <div class="step-card reveal" style="animation-delay:.24s">
+          <div class="step-num">04</div>
+          <div class="text-2xl mb-3">✏️</div>
+          <h4 class="font-display font-bold mb-2">Revisi</h4>
+          <p class="text-sm text-muted">Preview dikirim, kamu beri masukan, kami poles.</p>
+        </div>
+        <div class="step-card reveal" style="animation-delay:.32s">
+          <div class="step-num">05</div>
+          <div class="text-2xl mb-3">📂</div>
+          <h4 class="font-display font-bold mb-2">File Final</h4>
+          <p class="text-sm text-muted">Semua file dikirim lengkap, siap cetak & publish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section id="testimoni" class="bg-cream py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Testimoni</p>
+      <h2 class="section-title reveal">Kata Klien Kami</h2>
+      <p class="section-sub reveal">Lebih dari 350 klien sudah percayakan desain mereka ke DesainKu.</p>
+
+      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-12">
+        <div class="testi-card reveal">
+          <div class="text-amber-400 text-base mb-3">★★★★★</div>
+          <p class="text-sm leading-relaxed text-ink/80 mb-5 italic">"Logo baru kami keren banget! Konsepnya orisinal, tidak pasaran. Revisi cepat direspons. Recommended untuk UMKM!"</p>
+          <div class="flex items-center gap-3">
+            <div class="avatar bg-brand-600">A</div>
+            <div>
+              <p class="font-semibold text-sm">Ayu Rahmawati</p>
+              <p class="text-xs text-muted">Owner – Skincare Lokalita</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="animation-delay:.08s">
+          <div class="text-amber-400 text-base mb-3">★★★★★</div>
+          <p class="text-sm leading-relaxed text-ink/80 mb-5 italic">"Manual tracing logo lama saya hasilnya bersih banget, path rapi. Langsung bisa saya pakai buat bordir seragam."</p>
+          <div class="flex items-center gap-3">
+            <div class="avatar bg-blue-600">B</div>
+            <div>
+              <p class="font-semibold text-sm">Budi Santoso</p>
+              <p class="text-xs text-muted">Konveksi Jaya Abadi</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="animation-delay:.16s">
+          <div class="text-amber-400 text-base mb-3">★★★★★</div>
+          <p class="text-sm leading-relaxed text-ink/80 mb-5 italic">"Template Canva-nya keren, sudah di-brand pakai warna dan font bisnis saya. Tinggal ganti teks setiap upload."</p>
+          <div class="flex items-center gap-3">
+            <div class="avatar bg-green-700">R</div>
+            <div>
+              <p class="font-semibold text-sm">Rini Kusuma</p>
+              <p class="text-xs text-muted">Content Creator & UMKM</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="animation-delay:.24s">
+          <div class="text-amber-400 text-base mb-3">★★★★★</div>
+          <p class="text-sm leading-relaxed text-ink/80 mb-5 italic">"Mockup kemasan saya terlihat premium banget. Klien saya sampai tanya, 'sudah produksi?' — padahal masih presentasi!"</p>
+          <div class="flex items-center gap-3">
+            <div class="avatar bg-purple-700">D</div>
+            <div>
+              <p class="font-semibold text-sm">Dimas Prasetyo</p>
+              <p class="text-xs text-muted">Founder – Minuman Herbal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section id="faq" class="py-24 px-6 lg:px-10">
+    <div class="max-w-3xl mx-auto">
+      <p class="section-eye text-center reveal">FAQ</p>
+      <h2 class="section-title text-center mx-auto reveal">Pertanyaan Umum</h2>
+      <p class="section-sub text-center mx-auto reveal">Jawaban untuk hal-hal yang paling sering ditanyakan.</p>
+
+      <div class="mt-12 flex flex-col gap-3" id="faqList">
+
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Berapa lama proses pengerjaannya?</span>
+            <svg class="faq-arrow w-4 h-4 shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-a">Tergantung jenis layanan. Logo 1–3 hari, desain cetak 1–2 hari, manual tracing 1–2 hari, template Canva 2–4 hari, mockup 1 hari. Semua bisa lebih cepat dengan paket express.</div>
+        </div>
+
+        <div class="faq-item reveal" style="animation-delay:.05s">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>File apa saja yang dikirim?</span>
+            <svg class="faq-arrow w-4 h-4 shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-a">Tergantung layanan: Logo → AI/CDR/SVG + PNG/JPG. Desain cetak → PDF CMYK + JPG/PNG. Tracing → AI/CDR/SVG. Canva → link editable. Mockup → PNG/JPG HD.</div>
+        </div>
+
+        <div class="faq-item reveal" style="animation-delay:.1s">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Bagaimana sistem pembayarannya?</span>
+            <svg class="faq-arrow w-4 h-4 shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-a">DP 50% di awal pengerjaan, pelunasan setelah desain disetujui dan sebelum file final dikirim. Pembayaran via transfer bank atau e-wallet.</div>
+        </div>
+
+        <div class="faq-item reveal" style="animation-delay:.15s">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Apakah bisa revisi setelah file final dikirim?</span>
+            <svg class="faq-arrow w-4 h-4 shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-a">Revisi dilakukan sebelum file final. Jika ada perubahan setelah file dikirim karena kesalahan di pihak kami, kami tangani gratis. Perubahan permintaan baru akan dikenai biaya tambahan.</div>
+        </div>
+
+        <div class="faq-item reveal" style="animation-delay:.2s">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Apakah desain 100% orisinal?</span>
+            <svg class="faq-arrow w-4 h-4 shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-a">Ya, 100%. Semua desain dibuat dari nol sesuai brief klien dan sepenuhnya menjadi hak milik klien setelah pelunasan.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA
+  ═══════════════════════════════════════════ -->
+  <section id="kontak" class="py-24 px-6 lg:px-10 bg-cream">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <div class="bg-ink rounded-3xl px-8 py-16 relative overflow-hidden">
+        <!-- Deco blobs -->
+        <div class="absolute -top-16 -right-16 w-56 h-56 bg-brand-600 rounded-full opacity-20"></div>
+        <div class="absolute -bottom-20 -left-12 w-48 h-48 bg-brand-400 rounded-full opacity-15"></div>
+
+        <p class="text-white/50 text-xs font-bold uppercase tracking-widest mb-4 relative">Mulai Sekarang</p>
+        <h2 class="font-display font-extrabold text-white text-4xl lg:text-5xl mb-5 relative">
+          Siap Wujudkan<br/>Desain Impian?
+        </h2>
+        <p class="text-white/60 mb-10 max-w-md mx-auto relative">
+          Konsultasikan kebutuhan desain kamu sekarang — gratis, tanpa tekanan. Tim kami siap bantu dari nol.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 relative">
+          <a href="https://wa.me/6281234567890?text=Halo%20DesainKu%2C%20saya%20mau%20konsultasi%20desain" target="_blank" class="btn-wa">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat WhatsApp Sekarang
+          </a>
+          <a href="#layanan" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full px-7 py-3.5 transition-all">
+            Lihat Layanan
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-ink text-white/60 py-14 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <a href="#home" class="font-display font-extrabold text-xl text-white">Desain<span class="text-brand-500">Ku</span> Studio</a>
+          <p class="mt-3 text-sm leading-relaxed max-w-xs">Studio desain grafis profesional untuk bisnis lokal. Logo, cetak, tracing, Canva, dan mockup — semua di satu tempat.</p>
+          <div class="flex gap-3 mt-5">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors text-sm">ig</a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors text-sm">fb</a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-green-600 flex items-center justify-center transition-colors text-sm">wa</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-display font-bold text-white text-sm mb-4">Layanan</h5>
+          <ul class="flex flex-col gap-2.5 text-sm">
+            <li><a href="#layanan" class="hover:text-white transition-colors">Desain Logo</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Desain Cetak</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Manual Tracing</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Template Canva</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Jasa Mockup</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-display font-bold text-white text-sm mb-4">Kontak</h5>
+          <ul class="flex flex-col gap-2.5 text-sm">
+            <li>📱 0812-XXXX-XXXX</li>
+            <li>📧 desainku@gmail.com</li>
+            <li>📸 @desainku.id</li>
+            <li>🕗 Senin–Sabtu, 08.00–21.00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+        <p>© 2026 DesainKu Studio. All rights reserved.</p>
+        <p>Made with ☕ &amp; ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       MODAL ORDER
+  ═══════════════════════════════════════════ -->
+  <div id="orderModal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModalOutside(event)">
+    <div class="bg-white rounded-2xl w-full max-w-md p-8 relative max-h-[90vh] overflow-y-auto shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-cream hover:bg-gray-200 text-muted transition-colors">✕</button>
+      <h3 class="font-display font-extrabold text-2xl mb-1">Pesan Layanan</h3>
+      <p class="text-sm text-muted mb-6">Isi form ini — tim kami akan hubungi via WhatsApp dalam 1 jam.</p>
+
+      <div class="flex flex-col gap-4">
+        <div>
+          <label class="block text-xs font-bold mb-1.5">Nama Lengkap *</label>
+          <input id="f-name" type="text" placeholder="Nama kamu..." class="input-field" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold mb-1.5">Nomor WhatsApp *</label>
+          <input id="f-wa" type="tel" placeholder="0812-xxxx-xxxx" class="input-field" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold mb-1.5">Layanan yang Dipesan</label>
+          <select id="f-service" class="input-field">
+            <option value="Desain Logo">🏷️ Desain Logo</option>
+            <option value="Desain Cetak">🖨️ Desain Cetak</option>
+            <option value="Manual Tracing">✏️ Manual Tracing</option>
+            <option value="Template Canva">🎨 Template Canva</option>
+            <option value="Jasa Mockup">📦 Jasa Mockup</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold mb-1.5">Catatan / Referensi</label>
+          <textarea id="f-note" rows="3" placeholder="Ceritakan kebutuhanmu, referensi warna, gaya, dll..." class="input-field resize-none"></textarea>
+        </div>
+        <button onclick="submitOrder()" class="btn-primary w-full justify-center mt-1">
+          🚀 Kirim via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

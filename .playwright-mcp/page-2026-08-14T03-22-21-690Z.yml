@@ -1,0 +1,355 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "DesainKu" [ref=e4] [cursor=pointer]:
+        - /url: "#home"
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Layanan" [ref=e7] [cursor=pointer]:
+            - /url: "#layanan"
+        - listitem [ref=e8]:
+          - link "Harga" [ref=e9] [cursor=pointer]:
+            - /url: "#harga"
+        - listitem [ref=e10]:
+          - link "Proses" [ref=e11] [cursor=pointer]:
+            - /url: "#proses"
+        - listitem [ref=e12]:
+          - link "Testimoni" [ref=e13] [cursor=pointer]:
+            - /url: "#testimoni"
+        - listitem [ref=e14]:
+          - link "FAQ" [ref=e15] [cursor=pointer]:
+            - /url: "#faq"
+      - link "Konsultasi Gratis" [ref=e17] [cursor=pointer]:
+        - /url: "#kontak"
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Studio Desain Grafis Profesional
+      - heading "Desain yang Bicara untuk Bisnis Anda" [level=1] [ref=e23]
+      - paragraph [ref=e24]: Logo berkarakter, desain cetak siap produksi, manual tracing presisi, template Canva siap pakai, hingga mockup produk yang memukau.
+      - generic [ref=e25]:
+        - link "🎨 Lihat Layanan" [ref=e26] [cursor=pointer]:
+          - /url: "#layanan"
+        - link "Konsultasi Gratis" [ref=e27] [cursor=pointer]:
+          - /url: "#kontak"
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - paragraph [ref=e30]: 800+
+          - paragraph [ref=e31]: Proyek Selesai
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: 350+
+          - paragraph [ref=e34]: Klien Puas
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: 5★
+          - paragraph [ref=e37]: Rating Rata-rata
+        - generic [ref=e38]:
+          - paragraph [ref=e39]: <3hr
+          - paragraph [ref=e40]: Waktu Respons
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - text: 🏷️
+        - paragraph [ref=e43]: Desain Logo
+        - text: Unik & Berkarakter
+      - generic [ref=e44]:
+        - text: 🖨️
+        - paragraph [ref=e45]: Desain Cetak
+        - text: CMYK Siap Cetak
+      - generic [ref=e46]:
+        - text: ✏️
+        - paragraph [ref=e47]: Manual Tracing
+        - text: Vector Presisi
+      - generic [ref=e48]:
+        - text: 🎨
+        - paragraph [ref=e49]: Template Canva
+        - text: Siap Edit
+      - generic [ref=e50]:
+        - text: 📦
+        - paragraph [ref=e51]: Jasa Mockup
+        - text: Presentasi Profesional
+  - generic [ref=e53]:
+    - paragraph [ref=e54]: Mengapa Kami
+    - heading "Kenapa Pilih DesainKu?" [level=2] [ref=e55]
+    - paragraph [ref=e56]: Kami tidak sekadar bikin desain — kami bantu bisnis Anda tampil beda dan diingat.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: ⚡
+        - heading "Pengerjaan Cepat" [level=4] [ref=e60]
+        - paragraph [ref=e61]: Respons dalam hitungan jam, pengerjaan tepat sesuai deadline.
+      - generic [ref=e62]:
+        - generic [ref=e63]: 🎯
+        - heading "Konsep Orisinal" [level=4] [ref=e64]
+        - paragraph [ref=e65]: Setiap desain dibuat fresh dari nol, bukan template asal jadi.
+      - generic [ref=e66]:
+        - generic [ref=e67]: 🔄
+        - heading "Revisi Fleksibel" [level=4] [ref=e68]
+        - paragraph [ref=e69]: Revisi hingga kamu puas. Kami tidak melempar kerja lalu pergi.
+      - generic [ref=e70]:
+        - generic [ref=e71]: 📁
+        - heading "File Lengkap" [level=4] [ref=e72]
+        - paragraph [ref=e73]: Terima AI, CDR, PNG, PDF, SVG — semua format yang kamu butuhkan.
+  - generic [ref=e75]:
+    - paragraph [ref=e76]: Layanan Kami
+    - heading "5 Layanan Unggulan" [level=2] [ref=e77]
+    - paragraph [ref=e78]: Dari identitas brand hingga presentasi produk — semua ada di sini.
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - text: 🏷️ LOGO DESIGN
+          - heading "Desain Logo" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Identitas visual yang kuat dan tak terlupakan untuk brand Anda.
+          - paragraph [ref=e84]: Mulai dari Rp75K
+        - generic [ref=e85]:
+          - list [ref=e86]:
+            - listitem [ref=e87]: ✓Konsep logo orisinal & unik
+            - listitem [ref=e88]: ✓File vector AI/CDR + PNG/JPG
+            - listitem [ref=e89]: ✓Versi warna & hitam-putih
+            - listitem [ref=e90]: ✓Cocok untuk semua media cetak & digital
+          - link "Pesan Sekarang" [ref=e91] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - text: 🖨️ DESAIN CETAK
+          - heading "Desain Cetak" [level=3] [ref=e94]
+          - paragraph [ref=e95]: Banner, brosur, flyer, poster — siap produksi, CMYK, resolusi tinggi.
+          - paragraph [ref=e96]: Mulai dari Rp50K
+        - generic [ref=e97]:
+          - list [ref=e98]:
+            - listitem [ref=e99]: ✓Banner, spanduk, X-Banner
+            - listitem [ref=e100]: ✓Brosur, flyer, poster, leaflet
+            - listitem [ref=e101]: ✓Kartu nama, stiker
+            - listitem [ref=e102]: ✓File CMYK siap ke percetakan
+          - link "Pesan Sekarang" [ref=e103] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - text: ✏️ MANUAL TRACING
+          - heading "Manual Tracing" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Ubah gambar/foto menjadi vector bersih dan presisi dengan tangan.
+          - paragraph [ref=e108]: Mulai dari Rp35K
+        - generic [ref=e109]:
+          - list [ref=e110]:
+            - listitem [ref=e111]: ✓Trace logo, tanda tangan, ilustrasi
+            - listitem [ref=e112]: ✓Hasil vector AI/CDR/SVG bersih
+            - listitem [ref=e113]: ✓Cocok untuk bordir, cutting, sablon
+            - listitem [ref=e114]: ✓Presisi tinggi, path rapi
+          - link "Pesan Sekarang" [ref=e115] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - text: 🎨 TEMPLATE CANVA
+          - heading "Template Canva" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Template Canva custom sesuai brand — tinggal edit, langsung pakai.
+          - paragraph [ref=e120]: Mulai dari Rp45K
+        - generic [ref=e121]:
+          - list [ref=e122]:
+            - listitem [ref=e123]: ✓Feed Instagram, story, highlight
+            - listitem [ref=e124]: ✓Presentasi, pitch deck Canva
+            - listitem [ref=e125]: ✓Template menu, price list, katalog
+            - listitem [ref=e126]: ✓Dikirim via link Canva langsung
+          - link "Pesan Sekarang" [ref=e127] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - text: 📦 JASA MOCKUP
+          - heading "Jasa Mockup" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Tampilkan produk/desain Anda secara realistis & profesional.
+          - paragraph [ref=e132]: Mulai dari Rp25K
+        - generic [ref=e133]:
+          - list [ref=e134]:
+            - listitem [ref=e135]: ✓Mockup kemasan, kaos, tote bag
+            - listitem [ref=e136]: ✓Mockup label botol, stiker produk
+            - listitem [ref=e137]: ✓Mockup billboard, neon sign
+            - listitem [ref=e138]: ✓File PNG/JPG resolusi tinggi
+          - link "Pesan Sekarang" [ref=e139] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e140]:
+        - paragraph [ref=e141]: 💬
+        - heading "Butuh layanan custom?" [level=3] [ref=e142]
+        - paragraph [ref=e143]: Tidak ketemu layanan yang pas? Ceritakan kebutuhanmu, kami bisa bantu!
+        - link "Chat WhatsApp" [ref=e144] [cursor=pointer]:
+          - /url: "#kontak"
+  - generic [ref=e146]:
+    - paragraph [ref=e147]: Paket Harga
+    - heading "Transparan, Tidak Ada Biaya Tersembunyi" [level=2] [ref=e148]
+    - paragraph [ref=e149]: Semua harga sudah termasuk revisi dan file final sesuai paket.
+    - generic [ref=e150]:
+      - button "🏷️ Logo" [ref=e151] [cursor=pointer]
+      - button "🖨️ Desain Cetak" [ref=e152] [cursor=pointer]
+      - button "✏️ Tracing" [ref=e153] [cursor=pointer]
+      - button "🎨 Canva" [ref=e154] [cursor=pointer]
+      - button "📦 Mockup" [ref=e155] [cursor=pointer]
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - paragraph [ref=e159]: STARTER
+          - paragraph [ref=e160]: Rp75K
+          - paragraph [ref=e161]: Untuk bisnis baru yang butuh logo sederhana
+          - list [ref=e162]:
+            - listitem [ref=e163]: ✓2 konsep logo
+            - listitem [ref=e164]: ✓Revisi 2x
+            - listitem [ref=e165]: ✓File JPG & PNG
+            - listitem [ref=e166]: ✓Warna & hitam-putih
+          - link "Pilih Paket" [ref=e167] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e168]:
+          - text: PALING POPULER
+          - paragraph [ref=e169]: PROFESIONAL
+          - paragraph [ref=e170]: Rp175K
+          - paragraph [ref=e171]: Untuk brand yang ingin tampil percaya diri
+          - list [ref=e172]:
+            - listitem [ref=e173]: ✓3 konsep logo
+            - listitem [ref=e174]: ✓Revisi 4x
+            - listitem [ref=e175]: ✓File JPG, PNG & Source AI/CDR
+            - listitem [ref=e176]: ✓Panduan warna & font
+          - link "Pilih Paket" [ref=e177] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e178]:
+          - paragraph [ref=e179]: BRAND KIT
+          - paragraph [ref=e180]: Rp350K
+          - paragraph [ref=e181]: Paket identitas visual lengkap
+          - list [ref=e182]:
+            - listitem [ref=e183]: ✓3 konsep logo premium
+            - listitem [ref=e184]: ✓Revisi fleksibel
+            - listitem [ref=e185]: ✓File lengkap + Source
+            - listitem [ref=e186]: ✓Kartu nama & kop surat
+            - listitem [ref=e187]: ✓Brand guideline mini
+          - link "Pilih Paket" [ref=e188] [cursor=pointer]:
+            - /url: "#"
+      - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - generic [ref=e190]:
+    - paragraph [ref=e191]: Alur Kerja
+    - heading "Mudah & Transparan" [level=2] [ref=e192]
+    - paragraph [ref=e193]: Dari konsultasi hingga file final — kamu tahu posisi proyekmu di mana.
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]: "01"
+        - generic [ref=e197]: 💬
+        - heading "Konsultasi" [level=4] [ref=e198]
+        - paragraph [ref=e199]: Ceritakan kebutuhan & referensi desain via WhatsApp.
+      - generic [ref=e200]:
+        - generic [ref=e201]: "02"
+        - generic [ref=e202]: 📋
+        - heading "Brief & Penawaran" [level=4] [ref=e203]
+        - paragraph [ref=e204]: Kami kirim estimasi harga dan timeline pengerjaan.
+      - generic [ref=e205]:
+        - generic [ref=e206]: "03"
+        - generic [ref=e207]: 🖥️
+        - heading "Proses Desain" [level=4] [ref=e208]
+        - paragraph [ref=e209]: Tim kami mulai mengerjakan desain sesuai brief.
+      - generic [ref=e210]:
+        - generic [ref=e211]: "04"
+        - generic [ref=e212]: ✏️
+        - heading "Revisi" [level=4] [ref=e213]
+        - paragraph [ref=e214]: Preview dikirim, kamu beri masukan, kami poles.
+      - generic [ref=e215]:
+        - generic [ref=e216]: "05"
+        - generic [ref=e217]: 📂
+        - heading "File Final" [level=4] [ref=e218]
+        - paragraph [ref=e219]: Semua file dikirim lengkap, siap cetak & publish.
+  - generic [ref=e221]:
+    - paragraph [ref=e222]: Testimoni
+    - heading "Kata Klien Kami" [level=2] [ref=e223]
+    - paragraph [ref=e224]: Lebih dari 350 klien sudah percayakan desain mereka ke DesainKu.
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]: ★★★★★
+        - paragraph [ref=e228]: "\"Logo baru kami keren banget! Konsepnya orisinal, tidak pasaran. Revisi cepat direspons. Recommended untuk UMKM!\""
+        - generic [ref=e229]:
+          - generic [ref=e230]: A
+          - generic [ref=e231]:
+            - paragraph [ref=e232]: Ayu Rahmawati
+            - paragraph [ref=e233]: Owner – Skincare Lokalita
+      - generic [ref=e234]:
+        - generic [ref=e235]: ★★★★★
+        - paragraph [ref=e236]: "\"Manual tracing logo lama saya hasilnya bersih banget, path rapi. Langsung bisa saya pakai buat bordir seragam.\""
+        - generic [ref=e237]:
+          - generic [ref=e238]: B
+          - generic [ref=e239]:
+            - paragraph [ref=e240]: Budi Santoso
+            - paragraph [ref=e241]: Konveksi Jaya Abadi
+      - generic [ref=e242]:
+        - generic [ref=e243]: ★★★★★
+        - paragraph [ref=e244]: "\"Template Canva-nya keren, sudah di-brand pakai warna dan font bisnis saya. Tinggal ganti teks setiap upload.\""
+        - generic [ref=e245]:
+          - generic [ref=e246]: R
+          - generic [ref=e247]:
+            - paragraph [ref=e248]: Rini Kusuma
+            - paragraph [ref=e249]: Content Creator & UMKM
+      - generic [ref=e250]:
+        - generic [ref=e251]: ★★★★★
+        - paragraph [ref=e252]: "\"Mockup kemasan saya terlihat premium banget. Klien saya sampai tanya, 'sudah produksi?' — padahal masih presentasi!\""
+        - generic [ref=e253]:
+          - generic [ref=e254]: D
+          - generic [ref=e255]:
+            - paragraph [ref=e256]: Dimas Prasetyo
+            - paragraph [ref=e257]: Founder – Minuman Herbal
+  - generic [ref=e259]:
+    - paragraph [ref=e260]: FAQ
+    - heading "Pertanyaan Umum" [level=2] [ref=e261]
+    - paragraph [ref=e262]: Jawaban untuk hal-hal yang paling sering ditanyakan.
+    - generic [ref=e263]:
+      - generic [ref=e264]:
+        - button "Berapa lama proses pengerjaannya?" [ref=e265] [cursor=pointer]
+        - generic [ref=e268]: Tergantung jenis layanan. Logo 1–3 hari, desain cetak 1–2 hari, manual tracing 1–2 hari, template Canva 2–4 hari, mockup 1 hari. Semua bisa lebih cepat dengan paket express.
+      - generic [ref=e269]:
+        - button "File apa saja yang dikirim?" [ref=e270] [cursor=pointer]
+        - generic [ref=e273]: "Tergantung layanan: Logo → AI/CDR/SVG + PNG/JPG. Desain cetak → PDF CMYK + JPG/PNG. Tracing → AI/CDR/SVG. Canva → link editable. Mockup → PNG/JPG HD."
+      - generic [ref=e274]:
+        - button "Bagaimana sistem pembayarannya?" [ref=e275] [cursor=pointer]
+        - generic [ref=e278]: DP 50% di awal pengerjaan, pelunasan setelah desain disetujui dan sebelum file final dikirim. Pembayaran via transfer bank atau e-wallet.
+      - generic [ref=e279]:
+        - button "Apakah bisa revisi setelah file final dikirim?" [ref=e280] [cursor=pointer]
+        - generic [ref=e283]: Revisi dilakukan sebelum file final. Jika ada perubahan setelah file dikirim karena kesalahan di pihak kami, kami tangani gratis. Perubahan permintaan baru akan dikenai biaya tambahan.
+      - generic [ref=e284]:
+        - button "Apakah desain 100% orisinal?" [ref=e285] [cursor=pointer]
+        - generic [ref=e288]: Ya, 100%. Semua desain dibuat dari nol sesuai brief klien dan sepenuhnya menjadi hak milik klien setelah pelunasan.
+  - generic [ref=e291]:
+    - paragraph [ref=e294]: Mulai Sekarang
+    - heading "Siap Wujudkan Desain Impian?" [level=2] [ref=e295]: Siap WujudkanDesain Impian?
+    - paragraph [ref=e296]: Konsultasikan kebutuhan desain kamu sekarang — gratis, tanpa tekanan. Tim kami siap bantu dari nol.
+    - generic [ref=e297]:
+      - link "Chat WhatsApp Sekarang" [ref=e298] [cursor=pointer]:
+        - /url: https://wa.me/6281234567890?text=Halo%20DesainKu%2C%20saya%20mau%20konsultasi%20desain
+      - link "Lihat Layanan" [ref=e301] [cursor=pointer]:
+        - /url: "#layanan"
+  - contentinfo [ref=e302]:
+    - generic [ref=e303]:
+      - generic [ref=e304]:
+        - generic [ref=e305]:
+          - link "DesainKu Studio" [ref=e306] [cursor=pointer]:
+            - /url: "#home"
+          - paragraph [ref=e307]: Studio desain grafis profesional untuk bisnis lokal. Logo, cetak, tracing, Canva, dan mockup — semua di satu tempat.
+          - generic [ref=e308]:
+            - link "ig" [ref=e309] [cursor=pointer]:
+              - /url: "#"
+            - link "fb" [ref=e310] [cursor=pointer]:
+              - /url: "#"
+            - link "wa" [ref=e311] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e312]:
+          - heading "Layanan" [level=5] [ref=e313]
+          - list [ref=e314]:
+            - listitem [ref=e315]:
+              - link "Desain Logo" [ref=e316] [cursor=pointer]:
+                - /url: "#layanan"
+            - listitem [ref=e317]:
+              - link "Desain Cetak" [ref=e318] [cursor=pointer]:
+                - /url: "#layanan"
+            - listitem [ref=e319]:
+              - link "Manual Tracing" [ref=e320] [cursor=pointer]:
+                - /url: "#layanan"
+            - listitem [ref=e321]:
+              - link "Template Canva" [ref=e322] [cursor=pointer]:
+                - /url: "#layanan"
+            - listitem [ref=e323]:
+              - link "Jasa Mockup" [ref=e324] [cursor=pointer]:
+                - /url: "#layanan"
+        - generic [ref=e325]:
+          - heading "Kontak" [level=5] [ref=e326]
+          - list [ref=e327]:
+            - listitem [ref=e328]: 📱 0812-XXXX-XXXX
+            - listitem [ref=e329]: 📧 desainku@gmail.com
+            - listitem [ref=e330]: 📸 @desainku.id
+            - listitem [ref=e331]: 🕗 Senin–Sabtu, 08.00–21.00
+      - generic [ref=e332]:
+        - paragraph [ref=e333]: © 2026 DesainKu Studio. All rights reserved.
+        - paragraph [ref=e334]: Made with ☕ & ❤️ in Indonesia
