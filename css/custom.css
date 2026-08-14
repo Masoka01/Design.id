@@ -140,6 +140,11 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
 .faq-item.open .faq-q svg { transform:rotate(180deg); }
 .faq-a { display:none; font-size:.9rem; color:var(--muted); line-height:1.65; padding:0 1.5rem 1.25rem; }
 .faq-item.open .faq-a { display:block; }
+/* FAQ dalam section gelap */
+.section-dark .faq-item { background:var(--night-card); border-color:var(--night-line); }
+.section-dark .faq-q { color:#fff; }
+.section-dark .faq-q:hover { color:var(--brand-400); }
+.section-dark .faq-a { color:rgba(255,255,255,.6); }
 .cta-box { background:var(--night); border-radius:2rem; padding:3.5rem 2rem; position:relative; overflow:hidden; text-align:center; }
 .cta-box::before { content:''; position:absolute; width:20rem; height:20rem; border-radius:50%; background:var(--brand-600); opacity:.22; top:-8rem; right:-6rem; }
 .cta-box::after { content:''; position:absolute; width:14rem; height:14rem; border-radius:50%; background:var(--brand-400); opacity:.15; bottom:-6rem; left:-4rem; }
