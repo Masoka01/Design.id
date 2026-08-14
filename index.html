@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DesainKu Studio – Logo, Cetak, Tracing, Canva & Mockup</title>
-  <meta name="description" content="Jasa desain grafis profesional: Logo, Desain Cetak, Manual Tracing, Template Canva, dan Mockup. Harga terjangkau, kualitas premium, file siap pakai." />
+  <title>design.id — Jasa Desain Grafis: Logo, Cetak, Tracing, Canva & Mockup</title>
+  <meta name="description" content="Jasa desain grafis profesional dari design.id: logo, desain cetak, manual tracing, template Canva, dan mockup. Harga terjangkau, kualitas premium." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,8 +13,8 @@
       theme: {
         extend: {
           fontFamily: {
-            display: ['Syne', 'sans-serif'],
-            body:    ['DM Sans', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
           },
           colors: {
             brand: {
@@ -33,6 +33,7 @@
             paper: '#F7F6F2',
             cream: '#EDEAE1',
             muted: '#6B6860',
+            night: '#1F1D18',
           },
           animation: {
             'fade-up':    'fadeUp .6s ease both',
@@ -52,54 +53,61 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body class="font-body bg-paper text-ink antialiased">
 
+  <!-- SVG sprite -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-logo" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M10 7H6a2 2 0 00-2 2v4a2 2 0 002 2h3v2H5v2h5v-8a2 2 0 00-2-2zm10 0h-4a2 2 0 00-2 2v4a2 2 0 002 2h3v2h-3v2h5v-8a2 2 0 00-2-2z"/></symbol>
+  </svg>
+
   <!-- ═══════════════════════════════════════════
        NAVBAR
   ═══════════════════════════════════════════ -->
   <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
     <nav class="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between gap-6">
-
-      <!-- Logo -->
-      <a href="#home" class="font-display font-extrabold text-xl text-ink shrink-0">
-        Desain<span class="text-brand-600">Ku</span>
+      <a href="#home" class="font-display font-bold text-xl text-ink shrink-0 tracking-tight">
+        design<span class="text-brand-600">.id</span>
       </a>
-
-      <!-- Desktop links -->
-      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
-        <li><a href="#layanan"   class="hover:text-brand-600 transition-colors">Layanan</a></li>
-        <li><a href="#harga"     class="hover:text-brand-600 transition-colors">Harga</a></li>
-        <li><a href="#proses"    class="hover:text-brand-600 transition-colors">Proses</a></li>
+      <ul class="nav-links hidden md:flex items-center gap-7 text-sm font-medium text-muted">
+        <li><a href="#portfolio" class="hover:text-brand-600 transition-colors">Portfolio</a></li>
+        <li><a href="#layanan" class="hover:text-brand-600 transition-colors">Layanan</a></li>
+        <li><a href="#harga" class="hover:text-brand-600 transition-colors">Harga</a></li>
+        <li><a href="#proses" class="hover:text-brand-600 transition-colors">Proses</a></li>
         <li><a href="#testimoni" class="hover:text-brand-600 transition-colors">Testimoni</a></li>
-        <li><a href="#faq"       class="hover:text-brand-600 transition-colors">FAQ</a></li>
+        <li><a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a></li>
       </ul>
-
-      <!-- CTA + hamburger -->
       <div class="flex items-center gap-3">
-        <a href="#kontak" class="hidden sm:inline-flex btn-primary text-sm px-5 py-2.5">
-          Konsultasi Gratis
-        </a>
+        <a href="#kontak" class="hidden sm:inline-flex btn-primary text-sm px-5 py-2.5">Konsultasi Gratis</a>
         <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-cream transition-colors" aria-label="Menu">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
+          <svg class="icon w-6 h-6"><use href="#i-menu"/></svg>
         </button>
       </div>
     </nav>
-
-    <!-- Mobile menu -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-cream px-6 pb-5 pt-3 flex flex-col gap-4 text-sm font-medium">
-      <a href="#layanan"   class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Layanan</a>
-      <a href="#harga"     class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Harga</a>
-      <a href="#proses"    class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Proses</a>
+      <a href="#portfolio" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Portfolio</a>
+      <a href="#layanan" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Layanan</a>
+      <a href="#harga" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Harga</a>
+      <a href="#proses" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Proses</a>
       <a href="#testimoni" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Testimoni</a>
-      <a href="#faq"       class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">FAQ</a>
-      <a href="#kontak"    class="btn-primary text-center mt-1" onclick="closeMobileMenu()">Konsultasi Gratis</a>
+      <a href="#faq" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">FAQ</a>
+      <a href="#kontak" class="btn-primary text-center mt-1" onclick="closeMobileMenu()">Konsultasi Gratis</a>
     </div>
   </header>
 
@@ -107,83 +115,35 @@
        HERO
   ═══════════════════════════════════════════ -->
   <section id="home" class="min-h-screen flex flex-col justify-center pt-24 pb-16 px-6 lg:px-10 max-w-7xl mx-auto">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-      <!-- Left -->
+    <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-14 items-center">
       <div class="reveal">
-        <!-- Tag -->
         <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-full px-4 py-1.5 text-xs font-bold text-brand-600 mb-6">
           <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse-dot"></span>
           Studio Desain Grafis Profesional
         </div>
-
-        <h1 class="font-display font-extrabold text-5xl lg:text-6xl xl:text-7xl leading-[1.06] mb-6">
-          Desain yang<br/>
-          <span class="text-brand-600">Bicara</span> untuk<br/>
-          Bisnis Anda
+        <h1 class="font-display font-bold text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-6">
+          Desain yang<br/><span class="text-brand-600">berbicara</span> untuk<br/>bisnis Anda
         </h1>
-
         <p class="text-muted text-lg max-w-md mb-8 leading-relaxed">
-          Logo berkarakter, desain cetak siap produksi, manual tracing presisi,
-          template Canva siap pakai, hingga mockup produk yang memukau.
+          Logo berkarakter, desain cetak siap produksi, manual tracing presisi, template Canva siap pakai, hingga mockup produk yang memukau.
         </p>
-
         <div class="flex flex-wrap gap-3 mb-12">
-          <a href="#layanan" class="btn-primary">
-            <span>🎨</span> Lihat Layanan
-          </a>
-          <a href="#kontak" class="btn-outline">
-            Konsultasi Gratis
-          </a>
+          <a href="#portfolio" class="btn-primary"><svg class="icon w-5 h-5"><use href="#i-arrow"/></svg> Lihat Karya</a>
+          <a href="#kontak" class="btn-outline">Konsultasi Gratis</a>
         </div>
-
-        <!-- Stats -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-cream/80">
-          <div>
-            <p class="font-display font-extrabold text-3xl text-ink">800<span class="text-brand-600">+</span></p>
-            <p class="text-xs text-muted mt-1">Proyek Selesai</p>
-          </div>
-          <div>
-            <p class="font-display font-extrabold text-3xl text-ink">350<span class="text-brand-600">+</span></p>
-            <p class="text-xs text-muted mt-1">Klien Puas</p>
-          </div>
-          <div>
-            <p class="font-display font-extrabold text-3xl text-ink">5<span class="text-brand-600">★</span></p>
-            <p class="text-xs text-muted mt-1">Rating Rata-rata</p>
-          </div>
-          <div>
-            <p class="font-display font-extrabold text-3xl text-ink">&lt;3<span class="text-brand-600">hr</span></p>
-            <p class="text-xs text-muted mt-1">Waktu Respons</p>
-          </div>
+          <div><p class="font-display font-bold text-3xl text-ink">800<span class="text-brand-600">+</span></p><p class="text-xs text-muted mt-1">Proyek Selesai</p></div>
+          <div><p class="font-display font-bold text-3xl text-ink">350<span class="text-brand-600">+</span></p><p class="text-xs text-muted mt-1">Klien Puas</p></div>
+          <div><p class="font-display font-bold text-3xl text-ink">5<span class="text-brand-600">★</span></p><p class="text-xs text-muted mt-1">Rating Rata-rata</p></div>
+          <div><p class="font-display font-bold text-3xl text-ink">&lt;3<span class="text-brand-600">hr</span></p><p class="text-xs text-muted mt-1">Waktu Respons</p></div>
         </div>
       </div>
-
-      <!-- Right – floating service cards -->
-      <div class="hidden lg:grid grid-cols-2 gap-4 reveal" style="animation-delay:.15s">
-        <div class="service-float-card mt-8">
-          <span class="text-3xl">🏷️</span>
-          <p class="font-display font-bold text-sm mt-3">Desain Logo</p>
-          <span class="badge-chip mt-2">Unik & Berkarakter</span>
-        </div>
-        <div class="service-float-card">
-          <span class="text-3xl">🖨️</span>
-          <p class="font-display font-bold text-sm mt-3">Desain Cetak</p>
-          <span class="badge-chip mt-2">CMYK Siap Cetak</span>
-        </div>
-        <div class="service-float-card">
-          <span class="text-3xl">✏️</span>
-          <p class="font-display font-bold text-sm mt-3">Manual Tracing</p>
-          <span class="badge-chip mt-2">Vector Presisi</span>
-        </div>
-        <div class="service-float-card -mt-4">
-          <span class="text-3xl">🎨</span>
-          <p class="font-display font-bold text-sm mt-3">Template Canva</p>
-          <span class="badge-chip mt-2">Siap Edit</span>
-        </div>
-        <div class="service-float-card col-span-2">
-          <span class="text-3xl">📦</span>
-          <p class="font-display font-bold text-sm mt-3">Jasa Mockup</p>
-          <span class="badge-chip mt-2">Presentasi Profesional</span>
+      <div class="hidden lg:block reveal" style="animation-delay:.15s">
+        <div class="hero-visual">
+          <div class="hero-card"><div class="ic"><svg><use href="#i-logo"/></svg></div><div><b>Desain Logo</b><span>Identitas brand yang kuat</span></div></div>
+          <div class="hero-card"><div class="ic" style="background:#1d4ed8"><svg><use href="#i-box"/></svg></div><div><b>Jasa Mockup</b><span>Presentasi produk profesional</span></div></div>
+          <div class="hero-card"><div class="ic" style="background:#15803d"><svg><use href="#i-print"/></svg></div><div><b>Desain Cetak</b><span>CMYK siap produksi</span></div></div>
+          <p class="text-white/50 text-xs pt-1 pl-1">design.id — dari konsep hingga file final</p>
         </div>
       </div>
     </div>

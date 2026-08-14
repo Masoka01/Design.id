@@ -37,3 +37,10 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
 .section-dark .card-light, .section-dark .card { background:var(--night-card); border-color:var(--night-line); }
 /* ikon svg */
 .icon { width:1.25rem; height:1.25rem; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.hero-visual { background:var(--night); border-radius:1.75rem; padding:1.75rem; display:flex; flex-direction:column; gap:1rem; position:relative; overflow:hidden; }
+.hero-visual::before { content:''; position:absolute; width:14rem; height:14rem; border-radius:50%; background:var(--brand-600); opacity:.22; top:-4rem; right:-4rem; }
+.hero-card { background:var(--night-card); border:1px solid var(--night-line); border-radius:1rem; padding:1.1rem 1.25rem; display:flex; align-items:center; gap:.9rem; position:relative; }
+.hero-card .ic { width:2.75rem; height:2.75rem; border-radius:.8rem; background:var(--brand-600); color:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.hero-card .ic svg { width:1.4rem; height:1.4rem; }
+.hero-card b { display:block; font-family:var(--font-display); color:#fff; font-size:.95rem; }
+.hero-card span { font-size:.75rem; color:rgba(255,255,255,.55); }
