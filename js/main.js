@@ -1,5 +1,5 @@
 /* =============================================
-   DesainKu Studio — main.js
+   design.id — main.js
 ============================================= */
 
 /* ── Navbar scroll effect ─────────────────── */
@@ -11,20 +11,17 @@ window.addEventListener('scroll', () => {
 /* ── Mobile menu ──────────────────────────── */
 const menuBtn    = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
-const menuIcon   = document.getElementById('menuIcon');
+const menuUse    = document.getElementById('menuUse'); // <use href="#i-menu"> di dalam svg tombol
 
 menuBtn.addEventListener('click', () => {
   const isOpen = !mobileMenu.classList.contains('hidden');
   mobileMenu.classList.toggle('hidden', isOpen);
-  menuIcon.setAttribute('d', isOpen
-    ? 'M4 6h16M4 12h16M4 18h16'
-    : 'M6 18L18 6M6 6l12 12'
-  );
+  menuUse.setAttribute('href', isOpen ? '#i-menu' : '#i-close');
 });
 
 function closeMobileMenu() {
   mobileMenu.classList.add('hidden');
-  menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+  menuUse.setAttribute('href', '#i-menu');
 }
 
 /* ── Scroll reveal ────────────────────────── */
@@ -117,7 +114,7 @@ function submitOrder() {
   }
 
   const msg = [
-    `Halo DesainKu Studio! 👋`,
+    `Halo design.id! 👋`,
     ``,
     `Saya ingin memesan layanan desain:`,
     ``,

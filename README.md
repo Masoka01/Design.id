@@ -1,4 +1,4 @@
-# DesainKu Studio — Landing Page
+# design.id — Landing Page
 
 Web promosi jasa desain grafis siap pakai. Dibangun dengan **Tailwind CSS CDN** — tidak perlu build step, langsung buka di browser.
 
@@ -10,7 +10,7 @@ Web promosi jasa desain grafis siap pakai. Dibangun dengan **Tailwind CSS CDN** 
 desainku/
 ├── index.html        ← Halaman utama (semua konten)
 ├── css/
-│   └── custom.css    ← Komponen & animasi kustom
+│   └── custom.css    ← Komponen & animasi kustom (design tokens + plain CSS)
 ├── js/
 │   └── main.js       ← Navbar, FAQ, Tabs, Modal, WhatsApp
 └── README.md
@@ -30,17 +30,17 @@ desainku/
 
 ### Nomor WhatsApp
 Cari `6281234567890` di dua file berikut dan ganti dengan nomormu:
-- `index.html` — bagian tombol CTA footer
+- `index.html` — bagian tombol CTA & footer
 - `js/main.js` — baris `const waNumber = '6281234567890';`
 
 ### Nama Brand
-Cari `DesainKu` di `index.html` dan ganti sesuai nama studiomu.
+Brand `design.id` terpasang di `index.html` (navbar, footer, CTA) dan `js/main.js` (pesan WhatsApp). Cari `design.id` untuk mengganti sesuai nama studiumu.
 
 ### Harga
 Semua harga ada di `index.html`, bagian section `#layanan` dan `#harga`.
 
 ### Kontak (email, instagram, jam operasional)
-Ada di bagian `footer` di `index.html`.
+Ada di bagian `footer` di `index.html` — contoh: `halo@design.id`, `@design.id`.
 
 ---
 
@@ -59,17 +59,23 @@ Ada di bagian `footer` di `index.html`.
 ## ✅ Fitur
 
 - **Responsive** — mobile, tablet, desktop
-- **Navbar sticky** dengan efek scroll
-- **Pricing tabs** per layanan (5 tab)
+- **Navbar sticky** dengan efek scroll + active nav highlight
+- **Marquee klien** — strip nama klien berjalan
+- **Portfolio** — bento grid gelap dengan 6 karya
+- **Layanan** — grid 2+1 dengan ikon SVG
+- **Pricing tabs** per layanan (5 tab, section gelap)
+- **Proses** — 5 langkah bernomor
+- **Testimoni** — kutipan besar + kartu pendukung (section gelap)
 - **FAQ accordion**
+- **CTA gelap + Footer** branding design.id
 - **Modal order** → langsung buka WhatsApp dengan pesan terformat
 - **Scroll reveal** animasi halus
-- **Active nav** highlight saat scroll
+- **SVG sprite** — semua ikon dari satu sprite `#i-*`
 
 ---
 
 ## 🛠️ Teknologi
 
 - [Tailwind CSS](https://tailwindcss.com) via CDN (v3)
-- [Google Fonts](https://fonts.google.com) — Syne + DM Sans
+- [Google Fonts](https://fonts.google.com) — Space Grotesk + Inter
 - Vanilla JavaScript — tanpa framework
