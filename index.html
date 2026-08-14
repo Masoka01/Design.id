@@ -74,6 +74,7 @@
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></symbol>
     <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
     <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M10 7H6a2 2 0 00-2 2v4a2 2 0 002 2h3v2H5v2h5v-8a2 2 0 00-2-2zm10 0h-4a2 2 0 00-2 2v4a2 2 0 002 2h3v2h-3v2h5v-8a2 2 0 00-2-2z"/></symbol>
   </svg>
@@ -91,7 +92,6 @@
         <li><a href="#layanan" class="hover:text-brand-600 transition-colors">Layanan</a></li>
         <li><a href="#harga" class="hover:text-brand-600 transition-colors">Harga</a></li>
         <li><a href="#proses" class="hover:text-brand-600 transition-colors">Proses</a></li>
-        <li><a href="#testimoni" class="hover:text-brand-600 transition-colors">Testimoni</a></li>
         <li><a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a></li>
       </ul>
       <div class="flex items-center gap-3">
@@ -106,7 +106,6 @@
       <a href="#layanan" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Layanan</a>
       <a href="#harga" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Harga</a>
       <a href="#proses" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Proses</a>
-      <a href="#testimoni" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">Testimoni</a>
       <a href="#faq" class="py-1 border-b border-cream text-muted hover:text-brand-600" onclick="closeMobileMenu()">FAQ</a>
       <a href="#kontak" class="btn-primary text-center mt-1" onclick="closeMobileMenu()">Konsultasi Gratis</a>
     </div>
@@ -171,7 +170,7 @@
           <h2 class="section-title reveal">Karya yang Sudah Kami Kerjakan</h2>
           <p class="section-sub reveal">Contoh nyata hasil kerja tim kami — dari identitas brand hingga presentasi produk.</p>
         </div>
-        <a href="#" class="btn-ghost-dark reveal shrink-0"><svg class="icon w-5 h-5"><use href="#i-layout"/></svg> Lihat di Instagram</a>
+        <a href="#" class="btn-ig reveal shrink-0"><svg class="icon w-4 h-4"><use href="#i-instagram"/></svg> Lihat di Instagram</a>
       </div>
       <div class="porto-grid">
         <a class="porto-tile big reveal" href="#" onclick="openModal(event,'Desain Logo')">
@@ -526,40 +525,6 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
-       TESTIMONIALS
-  ═══════════════════════════════════════════ -->
-  <section id="testimoni" class="section-dark py-24 px-6 lg:px-10">
-    <div class="max-w-7xl mx-auto">
-      <p class="section-eye reveal">Testimoni</p>
-      <h2 class="section-title reveal">Kata Klien Kami</h2>
-      <p class="section-sub reveal">Lebih dari 350 klien sudah percayakan desain mereka ke design.id.</p>
-      <div class="testi-grid mt-12">
-        <div class="testi-featured reveal">
-          <p>“Mockup kemasan saya terlihat premium banget. Klien saya sampai tanya, 'sudah produksi?' — padahal masih presentasi!”</p>
-          <div class="who">
-            <div class="avatar" style="background:var(--brand-600)">D</div>
-            <div><p style="color:#fff;font-size:.9rem;font-weight:600;margin:0">Dimas Prasetyo</p><p style="color:rgba(255,255,255,.55);font-size:.8rem;margin:0">Founder — Minuman Herbal</p></div>
-          </div>
-        </div>
-        <div class="testi-card-dark reveal" style="animation-delay:.1s">
-          <p>“Logo baru kami keren banget! Konsepnya orisinal, tidak pasaran. Revisi cepat direspons. Recommended untuk UMKM!”</p>
-          <div class="who" style="display:flex;align-items:center;gap:.75rem;margin-top:1.25rem">
-            <div class="avatar" style="background:var(--brand-500)">A</div>
-            <div><p style="color:#fff;font-size:.85rem;font-weight:600;margin:0">Ayu Rahmawati</p><p style="color:rgba(255,255,255,.55);font-size:.75rem;margin:0">Owner — Skincare Lokalita</p></div>
-          </div>
-        </div>
-        <div class="testi-card-dark reveal" style="animation-delay:.2s">
-          <p>“Manual tracing logo lama saya hasilnya bersih banget, path rapi. Langsung bisa saya pakai buat bordir seragam.”</p>
-          <div class="who" style="display:flex;align-items:center;gap:.75rem;margin-top:1.25rem">
-            <div class="avatar" style="background:#1D4ED8">B</div>
-            <div><p style="color:#fff;font-size:.85rem;font-weight:600;margin:0">Budi Santoso</p><p style="color:rgba(255,255,255,.55);font-size:.75rem;margin:0">Konveksi Jaya Abadi</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
        FAQ
   ═══════════════════════════════════════════ -->
   <section id="faq" class="py-24 px-6 lg:px-10">
@@ -624,7 +589,7 @@
         <h2 class="font-display font-bold text-white text-4xl lg:text-5xl mb-5" style="position:relative">Siap Wujudkan<br/>Desain Impian?</h2>
         <p class="text-white/60 mb-10 max-w-md mx-auto" style="position:relative">Konsultasikan kebutuhan desain kamu sekarang — gratis, tanpa tekanan. Tim kami siap bantu dari nol.</p>
         <div class="flex flex-wrap justify-center gap-4" style="position:relative">
-          <a href="https://wa.me/6281234567890?text=Halo%20design.id%2C%20saya%20mau%20konsultasi%20desain" target="_blank" class="btn-wa">
+          <a href="https://wa.me/6285732084821?text=Halo%20design.id%2C%20saya%20mau%20konsultasi%20desain" target="_blank" class="btn-wa">
             <svg class="icon w-5 h-5" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>
             Chat WhatsApp Sekarang
           </a>
@@ -646,7 +611,7 @@
           <div class="flex gap-3 mt-5">
             <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors text-xs font-bold">IG</a>
             <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors text-xs font-bold">FB</a>
-            <a href="https://wa.me/6281234567890" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-green-600 flex items-center justify-center transition-colors">
+            <a href="https://wa.me/6285732084821" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-green-600 flex items-center justify-center transition-colors">
               <svg class="icon w-4 h-4" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>
             </a>
           </div>

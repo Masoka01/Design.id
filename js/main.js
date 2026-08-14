@@ -127,7 +127,7 @@ function submitOrder() {
   ].join('\n');
 
   // ⚠️  Ganti nomor WA di bawah ini
-  const waNumber = '6281234567890';
+  const waNumber = '6285732084821';
   window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   closeModal();
 }
