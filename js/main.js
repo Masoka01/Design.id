@@ -1,5 +1,5 @@
 /* =============================================
-   design.id — main.js
+   jasadesain.ld — main.js
 ============================================= */
 
 /* ── Navbar scroll effect ─────────────────── */
@@ -114,7 +114,7 @@ function submitOrder() {
   }
 
   const msg = [
-    `Halo design.id! 👋`,
+    `Halo jasadesain.ld! 👋`,
     ``,
     `Saya ingin memesan layanan desain:`,
     ``,

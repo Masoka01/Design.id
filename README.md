@@ -1,4 +1,4 @@
-# design.id — Landing Page
+# jasadesain.ld — Landing Page
 
 Web promosi jasa desain grafis siap pakai. Dibangun dengan **Tailwind CSS CDN** — tidak perlu build step, langsung buka di browser.
 
@@ -29,18 +29,18 @@ desainku/
 ## ✏️ Yang Perlu Diganti
 
 ### Nomor WhatsApp
-Cari `6281234567890` di dua file berikut dan ganti dengan nomormu:
+Cari `6285732084821` di dua file berikut dan ganti dengan nomormu:
 - `index.html` — bagian tombol CTA & footer
-- `js/main.js` — baris `const waNumber = '6281234567890';`
+- `js/main.js` — baris `const waNumber = '6285732084821';`
 
 ### Nama Brand
-Brand `design.id` terpasang di `index.html` (navbar, footer, CTA) dan `js/main.js` (pesan WhatsApp). Cari `design.id` untuk mengganti sesuai nama studiumu.
+Brand `jasadesain.ld` terpasang di `index.html` (navbar, footer, CTA) dan `js/main.js` (pesan WhatsApp). Link Instagram & TikTok sudah terhubung ke akun resmi di tombol "Lihat di Instagram" dan footer.
 
 ### Harga
 Semua harga ada di `index.html`, bagian section `#layanan` dan `#harga`.
 
 ### Kontak (email, instagram, jam operasional)
-Ada di bagian `footer` di `index.html` — contoh: `halo@design.id`, `@design.id`.
+Ada di bagian `footer` di `index.html` — contoh: `halo@jasadesain.ld`, `@jasadesain.ld`.
 
 ---
 
@@ -67,7 +67,7 @@ Ada di bagian `footer` di `index.html` — contoh: `halo@design.id`, `@design.id
 - **Proses** — 5 langkah bernomor
 - **Testimoni** — kutipan besar + kartu pendukung (section gelap)
 - **FAQ accordion**
-- **CTA gelap + Footer** branding design.id
+- **CTA gelap + Footer** branding jasadesain.ld
 - **Modal order** → langsung buka WhatsApp dengan pesan terformat
 - **Scroll reveal** animasi halus
 - **SVG sprite** — semua ikon dari satu sprite `#i-*`
