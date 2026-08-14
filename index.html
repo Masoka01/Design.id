@@ -222,111 +222,51 @@
       <h2 class="section-title reveal">5 Layanan Unggulan</h2>
       <p class="section-sub reveal">Dari identitas brand hingga presentasi produk — semua ada di sini.</p>
 
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7 mt-12">
-
-        <!-- 1. Logo -->
-        <div class="service-card reveal group">
-          <div class="p-7 border-b border-cream">
-            <span class="badge bg-brand-600 text-white">🏷️ LOGO DESIGN</span>
-            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Desain Logo</h3>
-            <p class="text-sm text-muted mb-4">Identitas visual yang kuat dan tak terlupakan untuk brand Anda.</p>
-            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp75K</span></p>
+      <div class="svc-grid mt-12">
+        <!-- Logo -->
+        <div class="svc-card reveal">
+          <div class="svc-icon"><svg class="icon"><use href="#i-logo"/></svg></div>
+          <h3 class="font-display font-bold text-xl mb-2">Desain Logo</h3>
+          <p class="text-sm text-muted mb-5 leading-relaxed">Identitas visual yang kuat dan tak terlupakan untuk brand Anda — konsep orisinal, bukan template.</p>
+          <p class="svc-price">Mulai dari <b>Rp75K</b></p>
+          <a href="#" onclick="openModal(event,'Desain Logo')" class="btn-outline w-full text-center mt-5">Pesan Sekarang</a>
+        </div>
+        <!-- Cetak -->
+        <div class="svc-card reveal" style="animation-delay:.08s">
+          <div class="svc-icon" style="background:#EFF6FF; color:#1D4ED8"><svg class="icon"><use href="#i-print"/></svg></div>
+          <h3 class="font-display font-bold text-xl mb-2">Desain Cetak</h3>
+          <p class="text-sm text-muted mb-5 leading-relaxed">Banner, brosur, flyer, poster — siap produksi, CMYK, resolusi tinggi.</p>
+          <p class="svc-price">Mulai dari <b>Rp50K</b></p>
+          <a href="#" onclick="openModal(event,'Desain Cetak')" class="btn-outline w-full text-center mt-5">Pesan Sekarang</a>
+        </div>
+        <!-- Tracing -->
+        <div class="svc-card reveal" style="animation-delay:.16s">
+          <div class="svc-icon" style="background:#F0FDF4; color:#15803D"><svg class="icon"><use href="#i-pen"/></svg></div>
+          <h3 class="font-display font-bold text-xl mb-2">Manual Tracing</h3>
+          <p class="text-sm text-muted mb-5 leading-relaxed">Ubah gambar atau foto menjadi vector bersih dan presisi — cocok untuk bordir, cutting, sablon.</p>
+          <p class="svc-price">Mulai dari <b>Rp35K</b></p>
+          <a href="#" onclick="openModal(event,'Manual Tracing')" class="btn-outline w-full text-center mt-5">Pesan Sekarang</a>
+        </div>
+        <!-- Canva -->
+        <div class="svc-card reveal" style="animation-delay:.24s">
+          <div class="svc-icon" style="background:#FAF5FF; color:#7C3AED"><svg class="icon"><use href="#i-layout"/></svg></div>
+          <h3 class="font-display font-bold text-xl mb-2">Template Canva</h3>
+          <p class="text-sm text-muted mb-5 leading-relaxed">Template Canva custom sesuai brand — tinggal edit, langsung pakai untuk konten sosial media.</p>
+          <p class="svc-price">Mulai dari <b>Rp45K</b></p>
+          <a href="#" onclick="openModal(event,'Template Canva')" class="btn-outline w-full text-center mt-5">Pesan Sekarang</a>
+        </div>
+        <!-- Mockup (lebar) -->
+        <div class="svc-card wide reveal" style="animation-delay:.32s">
+          <div class="svc-icon" style="background:#FFFBEB; color:#B45309"><svg class="icon"><use href="#i-box"/></svg></div>
+          <div class="flex-1">
+            <h3 class="font-display font-bold text-xl mb-2">Jasa Mockup</h3>
+            <p class="text-sm text-muted leading-relaxed">Tampilkan produk atau desain Anda secara realistis dan profesional — kemasan, kaos, tote bag, botol, hingga billboard.</p>
           </div>
-          <div class="p-7">
-            <ul class="feature-list">
-              <li>Konsep logo orisinal & unik</li>
-              <li>File vector AI/CDR + PNG/JPG</li>
-              <li>Versi warna & hitam-putih</li>
-              <li>Cocok untuk semua media cetak & digital</li>
-            </ul>
-            <a href="#" onclick="openModal(event,'Desain Logo')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
+          <div class="shrink-0 text-left sm:text-right">
+            <p class="svc-price" style="padding-top:0"><b>Rp25K</b><br/><span style="font-size:.75rem">mulai dari</span></p>
+            <a href="#" onclick="openModal(event,'Jasa Mockup')" class="btn-primary mt-3">Pesan Sekarang</a>
           </div>
         </div>
-
-        <!-- 2. Desain Cetak -->
-        <div class="service-card reveal group" style="animation-delay:.08s">
-          <div class="p-7 border-b border-cream">
-            <span class="badge bg-blue-600 text-white">🖨️ DESAIN CETAK</span>
-            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Desain Cetak</h3>
-            <p class="text-sm text-muted mb-4">Banner, brosur, flyer, poster — siap produksi, CMYK, resolusi tinggi.</p>
-            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp50K</span></p>
-          </div>
-          <div class="p-7">
-            <ul class="feature-list">
-              <li>Banner, spanduk, X-Banner</li>
-              <li>Brosur, flyer, poster, leaflet</li>
-              <li>Kartu nama, stiker</li>
-              <li>File CMYK siap ke percetakan</li>
-            </ul>
-            <a href="#" onclick="openModal(event,'Desain Cetak')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
-          </div>
-        </div>
-
-        <!-- 3. Manual Tracing -->
-        <div class="service-card reveal group" style="animation-delay:.16s">
-          <div class="p-7 border-b border-cream">
-            <span class="badge bg-green-700 text-white">✏️ MANUAL TRACING</span>
-            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Manual Tracing</h3>
-            <p class="text-sm text-muted mb-4">Ubah gambar/foto menjadi vector bersih dan presisi dengan tangan.</p>
-            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp35K</span></p>
-          </div>
-          <div class="p-7">
-            <ul class="feature-list">
-              <li>Trace logo, tanda tangan, ilustrasi</li>
-              <li>Hasil vector AI/CDR/SVG bersih</li>
-              <li>Cocok untuk bordir, cutting, sablon</li>
-              <li>Presisi tinggi, path rapi</li>
-            </ul>
-            <a href="#" onclick="openModal(event,'Manual Tracing')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
-          </div>
-        </div>
-
-        <!-- 4. Template Canva -->
-        <div class="service-card reveal group" style="animation-delay:.24s">
-          <div class="p-7 border-b border-cream">
-            <span class="badge bg-purple-700 text-white">🎨 TEMPLATE CANVA</span>
-            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Template Canva</h3>
-            <p class="text-sm text-muted mb-4">Template Canva custom sesuai brand — tinggal edit, langsung pakai.</p>
-            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp45K</span></p>
-          </div>
-          <div class="p-7">
-            <ul class="feature-list">
-              <li>Feed Instagram, story, highlight</li>
-              <li>Presentasi, pitch deck Canva</li>
-              <li>Template menu, price list, katalog</li>
-              <li>Dikirim via link Canva langsung</li>
-            </ul>
-            <a href="#" onclick="openModal(event,'Template Canva')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
-          </div>
-        </div>
-
-        <!-- 5. Jasa Mockup -->
-        <div class="service-card reveal group" style="animation-delay:.32s">
-          <div class="p-7 border-b border-cream">
-            <span class="badge bg-amber-700 text-white">📦 JASA MOCKUP</span>
-            <h3 class="font-display font-extrabold text-xl mt-4 mb-2">Jasa Mockup</h3>
-            <p class="text-sm text-muted mb-4">Tampilkan produk/desain Anda secara realistis & profesional.</p>
-            <p class="text-xs text-muted">Mulai dari <span class="font-display font-bold text-2xl text-ink">Rp25K</span></p>
-          </div>
-          <div class="p-7">
-            <ul class="feature-list">
-              <li>Mockup kemasan, kaos, tote bag</li>
-              <li>Mockup label botol, stiker produk</li>
-              <li>Mockup billboard, neon sign</li>
-              <li>File PNG/JPG resolusi tinggi</li>
-            </ul>
-            <a href="#" onclick="openModal(event,'Jasa Mockup')" class="btn-primary w-full text-center mt-6 block">Pesan Sekarang</a>
-          </div>
-        </div>
-
-        <!-- CTA card -->
-        <div class="reveal flex flex-col items-center justify-center bg-ink rounded-2xl p-8 text-center min-h-[300px]" style="animation-delay:.4s">
-          <p class="text-4xl mb-4">💬</p>
-          <h3 class="font-display font-bold text-white text-xl mb-3">Butuh layanan custom?</h3>
-          <p class="text-white/60 text-sm mb-6">Tidak ketemu layanan yang pas? Ceritakan kebutuhanmu, kami bisa bantu!</p>
-          <a href="#kontak" class="btn-wa inline-flex">Chat WhatsApp</a>
-        </div>
-
       </div>
     </div>
   </section>
