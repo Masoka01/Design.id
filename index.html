@@ -150,35 +150,65 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
-       WHY US
+       MARQUEE KLIEN
   ═══════════════════════════════════════════ -->
-  <section class="bg-cream py-24 px-6 lg:px-10">
-    <div class="max-w-7xl mx-auto">
-      <p class="section-eye reveal">Mengapa Kami</p>
-      <h2 class="section-title reveal">Kenapa Pilih DesainKu?</h2>
-      <p class="section-sub reveal">Kami tidak sekadar bikin desain — kami bantu bisnis Anda tampil beda dan diingat.</p>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Kopi Senja ☕ &nbsp;•&nbsp; Skincare Lokalita &nbsp;•&nbsp; Konveksi Jaya Abadi &nbsp;•&nbsp; Katering Bunda &nbsp;•&nbsp; Toko Buku Lembar &nbsp;•&nbsp; Café Rasa &nbsp;•&nbsp; Distro Kreatif &nbsp;•&nbsp; Studio Musik Akustik</span>
+      <span>Kopi Senja ☕ &nbsp;•&nbsp; Skincare Lokalita &nbsp;•&nbsp; Konveksi Jaya Abadi &nbsp;•&nbsp; Katering Bunda &nbsp;•&nbsp; Toko Buku Lembar &nbsp;•&nbsp; Café Rasa &nbsp;•&nbsp; Distro Kreatif &nbsp;•&nbsp; Studio Musik Akustik</span>
+    </div>
+  </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-        <div class="why-card reveal">
-          <div class="text-3xl mb-4">⚡</div>
-          <h4 class="font-display font-bold mb-2">Pengerjaan Cepat</h4>
-          <p class="text-sm text-muted leading-relaxed">Respons dalam hitungan jam, pengerjaan tepat sesuai deadline.</p>
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section id="portfolio" class="section-dark py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="section-eye reveal">Portfolio</p>
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
+        <div>
+          <h2 class="section-title reveal">Karya yang Sudah Kami Kerjakan</h2>
+          <p class="section-sub reveal">Contoh nyata hasil kerja tim kami — dari identitas brand hingga presentasi produk.</p>
         </div>
-        <div class="why-card reveal" style="animation-delay:.1s">
-          <div class="text-3xl mb-4">🎯</div>
-          <h4 class="font-display font-bold mb-2">Konsep Orisinal</h4>
-          <p class="text-sm text-muted leading-relaxed">Setiap desain dibuat fresh dari nol, bukan template asal jadi.</p>
-        </div>
-        <div class="why-card reveal" style="animation-delay:.2s">
-          <div class="text-3xl mb-4">🔄</div>
-          <h4 class="font-display font-bold mb-2">Revisi Fleksibel</h4>
-          <p class="text-sm text-muted leading-relaxed">Revisi hingga kamu puas. Kami tidak melempar kerja lalu pergi.</p>
-        </div>
-        <div class="why-card reveal" style="animation-delay:.3s">
-          <div class="text-3xl mb-4">📁</div>
-          <h4 class="font-display font-bold mb-2">File Lengkap</h4>
-          <p class="text-sm text-muted leading-relaxed">Terima AI, CDR, PNG, PDF, SVG — semua format yang kamu butuhkan.</p>
-        </div>
+        <a href="#" class="btn-ghost-dark reveal shrink-0"><svg class="icon w-5 h-5"><use href="#i-layout"/></svg> Lihat di Instagram</a>
+      </div>
+      <div class="porto-grid">
+        <a class="porto-tile big reveal" href="#" onclick="openModal(event,'Desain Logo')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#4A1C08 0%,#C85020 100%)"></div>
+          <span class="porto-tag">Logo</span>
+          <p class="porto-title">Kopi Senja — Identitas Brand</p>
+          <p class="porto-sub">Konsep logo hangat & berkarakter</p>
+        </a>
+        <a class="porto-tile reveal" href="#" onclick="openModal(event,'Jasa Mockup')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#0F172A 0%,#1D4ED8 100%)"></div>
+          <span class="porto-tag">Mockup</span>
+          <p class="porto-title">Kemasan Skincare</p>
+          <p class="porto-sub">Mockup botol & box</p>
+        </a>
+        <a class="porto-tile reveal" href="#" onclick="openModal(event,'Desain Cetak')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#052E16 0%,#15803D 100%)"></div>
+          <span class="porto-tag">Cetak</span>
+          <p class="porto-title">Banner Grand Opening</p>
+          <p class="porto-sub">CMYK siap cetak</p>
+        </a>
+        <a class="porto-tile reveal" href="#" onclick="openModal(event,'Manual Tracing')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#1E1B4B 0%,#7C3AED 100%)"></div>
+          <span class="porto-tag">Tracing</span>
+          <p class="porto-title">Logo Konveksi</p>
+          <p class="porto-sub">Vector presisi untuk bordir</p>
+        </a>
+        <a class="porto-tile reveal" href="#" onclick="openModal(event,'Template Canva')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#3B0764 0%,#A21CAF 100%)"></div>
+          <span class="porto-tag">Canva</span>
+          <p class="porto-title">Feed Instagram Katering</p>
+          <p class="porto-sub">Template siap edit</p>
+        </a>
+        <a class="porto-tile wide reveal" href="#" onclick="openModal(event,'Desain Cetak')">
+          <div class="porto-bg" style="background:linear-gradient(135deg,#431407 0%,#EA580C 100%)"></div>
+          <span class="porto-tag">Cetak</span>
+          <p class="porto-title">Brosur Menu Kafe</p>
+          <p class="porto-sub">Layout bersih, siap produksi — 2 lipatan A4</p>
+        </a>
       </div>
     </div>
   </section>
