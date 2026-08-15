@@ -71,14 +71,15 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
 .porto-tile { position:relative; border-radius:1.25rem; overflow:hidden; background:var(--night-card); border:1px solid var(--night-line); display:flex; flex-direction:column; justify-content:flex-end; padding:1.25rem; transition:transform .3s ease, border-color .3s ease; }
 .porto-tile:hover { transform:translateY(-4px); border-color:var(--brand-500); }
 /* stat hero — kartu ala porto-tile */
-.stat-card { border-radius:1.25rem; background:radial-gradient(120% 90% at 50% 0%, rgba(96,165,250,.10), transparent 55%), color-mix(in srgb, var(--night-card) 85%, transparent); border:1px solid rgba(255,255,255,.14); padding:1.25rem; text-align:center; box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 8px 24px rgba(14,27,54,.12); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
-.stat-card:hover { transform:translateY(-4px); border-color:var(--brand-500); box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 12px 32px rgba(14,27,54,.18); }
+.stat-card { border-radius:1.25rem; background:radial-gradient(120% 90% at 50% 0%, rgba(96,165,250,.10), transparent 55%), color-mix(in srgb, var(--night-card) 75%, transparent); border:1px solid rgba(255,255,255,.14); padding:1.25rem; text-align:center; box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 8px 24px rgba(14,27,54,.12); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); transition:transform .3s ease, box-shadow .3s ease; }
+.stat-card:hover { transform:translateY(-4px); box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 12px 32px rgba(14,27,54,.18); }
 /* stat hero — glass backdrop */
 .stat-stage { position:relative; }
 .stat-backdrop { position:absolute; inset:0; overflow:hidden; border-radius:1.5rem; pointer-events:none; }
 .stat-blob { position:absolute; border-radius:9999px; }
-.stat-blob-a { width:20rem; height:20rem; top:-3rem; left:-2rem; background:radial-gradient(circle, rgba(96,165,250,.38) 0%, rgba(96,165,250,.10) 45%, transparent 70%); }
-.stat-blob-b { width:14rem; height:14rem; bottom:-2rem; right:-2rem; background:radial-gradient(circle, rgba(59,130,246,.26) 0%, rgba(59,130,246,.06) 50%, transparent 72%); }
+.stat-blob-a { width:18rem; height:18rem; top:-3rem; left:-2rem; background:radial-gradient(circle, rgba(96,165,250,.60) 0%, rgba(96,165,250,.16) 40%, transparent 62%); }
+.stat-blob-b { width:12rem; height:12rem; bottom:-2rem; right:-2rem; background:radial-gradient(circle, rgba(59,130,246,.45) 0%, rgba(59,130,246,.12) 45%, transparent 65%); }
+.stat-blob-c { width:16rem; height:16rem; top:50%; left:50%; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(96,165,250,.50) 0%, rgba(96,165,250,.14) 40%, transparent 62%); }
 .porto-tile.big { grid-column:span 2; grid-row:span 2; }
 .porto-tile.wide { grid-column:span 2; }
 .porto-bg { position:absolute; inset:0; opacity:.85; transition:opacity .3s; }
