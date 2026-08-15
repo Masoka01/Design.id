@@ -71,7 +71,7 @@ body { font-family: var(--font-body); background: var(--paper); color: var(--ink
 .porto-tile { position:relative; border-radius:1.25rem; overflow:hidden; background:var(--night-card); border:1px solid var(--night-line); display:flex; flex-direction:column; justify-content:flex-end; padding:1.25rem; transition:transform .3s ease, border-color .3s ease; }
 .porto-tile:hover { transform:translateY(-4px); border-color:var(--brand-500); }
 /* stat hero — kartu ala porto-tile */
-.stat-card { border-radius:1.25rem; background:var(--night-card); border:1px solid var(--night-line); padding:1.25rem; transition:transform .3s ease, border-color .3s ease; }
+.stat-card { border-radius:1.25rem; background:var(--night-card); border:1px solid var(--night-line); padding:1.25rem; text-align:center; transition:transform .3s ease, border-color .3s ease; }
 .stat-card:hover { transform:translateY(-4px); border-color:var(--brand-500); }
 .porto-tile.big { grid-column:span 2; grid-row:span 2; }
 .porto-tile.wide { grid-column:span 2; }
